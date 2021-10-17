@@ -1,0 +1,558 @@
+﻿Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Rolling back assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Warning: The source AugustGrace is not registered on the local machine.
+Service AugustGrace is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source Service1.
+Service Service1 is being removed from the system...
+Service Service1 was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Creating EventLog source AugustGrace in log Application...
+Rolling back assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Restoring event log to previous state for source AugustGrace.
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Creating EventLog source AugustGrace in log Application...
+Rolling back assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Restoring event log to previous state for source AugustGrace.
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Creating EventLog source AugustGrace in log Application...
+Rolling back assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Restoring event log to previous state for source AugustGrace.
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Creating EventLog source AugustGrace in log Application...
+Rolling back assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Restoring event log to previous state for source AugustGrace.
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Uninstalling assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Removing EventLog source AugustGrace.
+Service AugustGrace is being removed from the system...
+Service AugustGrace was successfully removed from the system.
+Installing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\develop\csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing assembly 'D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.exe
+Installing service AugustGrace...
+Service AugustGrace has been successfully installed.
+Creating EventLog source AugustGrace in log Application...
+Committing assembly 'D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.InstallLog
+   assemblypath = D:\Develop\Csharp\grace\grace_soul\bin\Debug\grace_soul.exe

@@ -1,0 +1,1 @@
+t c,192.168.27.4,admin,1107;wait 500;t com,en;wait 500;t com,1107;wait 500;t com,rel;wait 500;t com,y;wait 500;t com,y;

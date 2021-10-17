@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CgracepfApp" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAQ=</HashCode>
+      <FileName>grace_pf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PacketFilter" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAaAAAAAIAAAAAAAAAAkAAAAAAAAAAACAAgAIBgAAA=</HashCode>
+      <FileName>PacketFilter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_IPFILTERINFO" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PacketFilter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="IPFILTERINFO" Collapsed="true">
+    <Position X="1.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PacketFilter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PIPFILTERINFO" Collapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PacketFilter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IPFILTERINFOLIST" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PacketFilter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

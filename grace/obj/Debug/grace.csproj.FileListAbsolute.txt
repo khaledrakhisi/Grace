@@ -1,0 +1,17 @@
+D:\Develop\Csharp\grace\grace\bin\Debug\grace.exe.config
+D:\Develop\Csharp\grace\grace\bin\Debug\grace.exe
+D:\Develop\Csharp\grace\grace\bin\Debug\grace.pdb
+D:\Develop\Csharp\grace\grace\bin\Debug\grace_scheduler.dll
+D:\Develop\Csharp\grace\grace\bin\Debug\Renci.SshNet.dll
+D:\Develop\Csharp\grace\grace\bin\Debug\grace_scheduler.pdb
+D:\Develop\Csharp\grace\grace\bin\Debug\Renci.SshNet.xml
+D:\Develop\Csharp\grace\grace\obj\Debug\Interop.Shell32.dll
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.csproj.ResolveComReference.cache
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.frm_Terminal.resources
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.Properties.Resources.resources
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.csproj.GenerateResource.cache
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.csproj.CoreCompileInputs.cache
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.csproj.CopyComplete
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.exe
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.pdb
+D:\Develop\Csharp\grace\grace\obj\Debug\grace.csprojAssemblyReference.cache

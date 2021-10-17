@@ -1,0 +1,36 @@
+fr uni,172.27.10.14,sch sh
+fr multicastcommand,172.27.10.1,172.27.10.20,sys p,sh
+fr broadcastcommand,sys p,sh
+fr unicastc,172.27.10.14,net ho
+fr unicastcommand,172.29.210.29,sch sh;sys cp,nam
+fr u,172.27.10.14,file show,.\
+fr u,hissms-sh,file open ,.\re.run
+fr u,HISSMS-SH,net ip
+net ip,hissms-sh
+net ip,desktop-1uu95v4
+net ip,shm1000
+file open,.\monitor.run
+fr u,hissms-sh,sys pri,names
+fr u,172.27.20.83,sys usb
+file open,.\del.run
+fr u,172.27.20.83,file open,.\monitor.run
+fr u,172.27.20.83,file show,.\
+sch add,3/25/2019,2:22,sch sh
+sch add,1398/05/01,2:22,sch sh
+sch add,3/25/2019,{@everyminutes:4@},sys ip
+sch add,3/25/2019,17:57,sch sh
+sch add,{@everyday@},22:40,sys usb,readonly,dis
+file ver,internet explorer
+fr u,172.27.20.83,up st
+ssh con,172.27.10.18,root,R@s@ict.ir
+fr u,172.27.6.22,up st,rakhisi,uNity#2019,aums.ir
+fr u,172.27.6.22,fi del,.\gracesvclog.txt
+fr u,172.27.10.14,up st,rakhisi,uNity#2019,aums.ir
+net ping,on,172.27.10.14
+sch addt,{@onstartup@},,up get
+fr u,172.27.10.14,fir add,172.27.20.83;fir on
+sys proc,on,\\172.27.20.4\software2\diabet\disk1\vc_redist.x86.exe
+sys proc,on,\\172.27.20.4\software2\diabet\disk1\vc_redist.x64.msi,sib,123@123,sh.dom
+fr u,172.27.10.14,sys proc,on,\\172.27.20.4\software2\diabet\disk1\vc_redist.x64.msi,sib,123@123,sh.dom
+msiexec.exe /i \\172.27.20.4\software2\diabet\disk1\vc_redist.x64.msi
+fr u,172.27.3.42,fir add,172.27.8.47

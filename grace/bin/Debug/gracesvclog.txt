@@ -1,0 +1,90 @@
+2021/09/06 19:18 Attempting to stop AugustGrace...
+
+2021/09/06 19:18 AugustGrace stopped.
+
+2021/09/06 19:18 ** UDP server is about to start...
+
+2021/09/06 19:18 ** UDP server is listening now...
+
+2021/09/06 19:18 NamedPipeServerStream object created.
+
+2021/09/06 19:18 Waiting for client connection...
+
+2021/09/06 19:18 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/09/06 19:18 Attempt #1
+
+2021/09/06 19:18 Application service started successfully.
+
+2021/09/09 01:20 Attempting to stop AugustGrace...
+
+2021/09/09 01:20 AugustGrace stopped.
+
+2021/09/09 01:20 ** UDP server is about to start...
+
+2021/09/09 01:20 ** UDP server is listening now...
+
+2021/09/09 01:20 NamedPipeServerStream object created.
+
+2021/09/09 01:20 Waiting for client connection...
+
+2021/09/09 01:28 Attempting to stop AugustGrace...
+
+2021/09/09 01:28 AugustGrace stopped.
+
+2021/09/09 01:28 ** UDP server is about to start...
+
+2021/09/09 01:28 ** UDP server is listening now...
+
+2021/09/09 01:28 NamedPipeServerStream object created.
+
+2021/09/09 01:28 Waiting for client connection...
+
+2021/09/09 01:30 Attempting to stop AugustGrace...
+
+2021/09/09 01:30 AugustGrace stopped.
+
+2021/09/09 01:30 ** UDP server is about to start...
+
+2021/09/09 01:30 ** UDP server is listening now...
+
+2021/09/09 01:30 NamedPipeServerStream object created.
+
+2021/09/09 01:30 Waiting for client connection...
+
+2021/09/09 01:32 Attempting to stop AugustGrace...
+
+2021/09/09 01:32 AugustGrace stopped.
+
+2021/09/09 01:32 ** UDP server is about to start...
+
+2021/09/09 01:32 ** UDP server is listening now...
+
+2021/09/09 01:32 NamedPipeServerStream object created.
+
+2021/09/09 01:32 Waiting for client connection...
+
+2021/09/09 01:32 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/09/09 01:32 Attempt #1
+
+2021/09/09 01:32 Application service started successfully.
+
+2021/09/09 01:33 Attempting to stop AugustGrace...
+
+2021/09/09 01:33 AugustGrace stopped.
+
+2021/09/09 01:33 ** UDP server is about to start...
+
+2021/09/09 01:33 ** UDP server is listening now...
+
+2021/09/09 01:33 NamedPipeServerStream object created.
+
+2021/09/09 01:33 Waiting for client connection...
+
+2021/09/09 01:33 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/09/09 01:33 Attempt #1
+
+2021/09/09 01:33 Application service started successfully.
+

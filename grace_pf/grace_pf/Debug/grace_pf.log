@@ -1,0 +1,17 @@
+﻿  pch.cpp
+  grace_pf.cpp
+  PacketFilteringCaller.cpp
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(59,34): warning C4251:  'PacketFilter::m_lstFilters': class 'std::list<IPFILTERINFO,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'PacketFilter'
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(59,34): warning C4251:         with
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(59,34): warning C4251:         [
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(59,34): warning C4251:             _Ty=IPFILTERINFO
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(59,34): warning C4251:         ]
+  Generating Code...
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(47): message :  see declaration of 'std::list<IPFILTERINFO,std::allocator<_Ty>>'
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(47): message :         with
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(47): message :         [
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(47): message :             _Ty=IPFILTERINFO
+D:\Develop\Csharp\grace\grace_pf\grace_pf\PacketFilter.h(47): message :         ]
+  stdafx.cpp
+     Creating library D:\Develop\Csharp\grace\Debug\grace_pf.lib and object D:\Develop\Csharp\grace\Debug\grace_pf.exp
+  grace_pf.vcxproj -> D:\Develop\Csharp\grace\Debug\grace_pf.dll
