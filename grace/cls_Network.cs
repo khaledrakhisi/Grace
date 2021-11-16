@@ -6,6 +6,8 @@ using System.IO;
 using System.IO.Pipes;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
@@ -24,9 +26,61 @@ namespace grace
         private const int BUFFER_SIZE = 2048;
         private static readonly byte[] buffer = new byte[BUFFER_SIZE];
         public const string pingableIPAddress = "172.27.20.1";
+        private static HttpClient httpClient;
 
         private static UdpClient udpServer = null;//new UdpClient(PORT);    
         private static NamedPipeServerStream pipeServer = null;
+
+        static cls_Network()
+        {
+            #region Initializing HttpsClient object
+            httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri("http://localhost:7340");
+            // Add an Accept header for JSON format.
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            #endregion
+        }
+
+        public static string http_GET(string s_subURL)
+        {
+            HttpResponseMessage response = httpClient.GetAsync(s_subURL).Result;  // Blocking call!
+            if (response.IsSuccessStatusCode)
+            {
+                var data = response.Content.ReadAsStringAsync().Result;
+                return data;
+            }
+
+            return null;
+        }
+        public static string http_DELETE(string s_subURL)
+        {
+            HttpResponseMessage response = httpClient.DeleteAsync(s_subURL).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var data = response.Content.ReadAsStringAsync().Result;
+                return data;
+            }
+
+            return null;
+        }
+
+        public static bool ValidateIPv4(string ipString)
+        {
+            if (String.IsNullOrWhiteSpace(ipString))
+            {
+                return false;
+            }
+
+            string[] splitValues = ipString.Split('.');
+            if (splitValues.Length != 4)
+            {
+                return false;
+            }
+
+            byte tempForParsing;
+
+            return splitValues.All(r => byte.TryParse(r, out tempForParsing));
+        }
 
         public static void SetupUDPServer()
         {

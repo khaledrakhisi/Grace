@@ -8,12 +8,15 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Sockets;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
+using System.Web.Script.Serialization;
 
 namespace grace_soul
 {
@@ -21,7 +24,7 @@ namespace grace_soul
     {
         private System.Timers.Timer _timer_scheduler, /*_timer_trigger,*/ _timer_runTotal;
         schedule sch_to_run = null;
-        private static ulong elapsedMinutes = 0;
+        private static ulong elapsedMinutes = 0;        
 
         public Service1()
         {
@@ -29,8 +32,21 @@ namespace grace_soul
             //Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-GB");
             //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-GB");
             CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
-            CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");            
         }
+
+        #region Command Classes
+        public class Commands
+        {
+            public Command[] commands { get; set; }
+        }
+        public class Command
+        {
+            public string id { get; set; }
+            public string text { get; set; }
+            public string forWhom { get; set; }
+        }
+        #endregion
 
         private void RunTrigger(string sTriggerName, string sTriggeParameter)
         {
@@ -120,6 +136,7 @@ namespace grace_soul
 
         private void _timer_scheduler_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
+            #region Resetting log file
             try
             {
                 if (DateTime.Now.ToString("HH:mm") == "00:00" || DateTime.Now.ToString("HH:mm") == "09:00" || DateTime.Now.ToString("HH:mm") == "12:00")
@@ -127,10 +144,53 @@ namespace grace_soul
                     cls_Utility.ClearLogFile();
                 }
             }
-            catch
-            {
+            catch {}
+            #endregion
 
+            #region Connecting to and running GET from API "grace.khaledr.ir/api/commands"
+            string JSON_data = cls_Network.http_GET("api/commands");
+
+            if (JSON_data != null)
+            {
+                cls_Utility.Log("\r\n" + "Http GET successfully.");
+
+                Commands commands = new JavaScriptSerializer().Deserialize<Commands>(JSON_data);
+
+                cls_Utility.Log("\r\n" + "JSON deserialized successfully.");
+
+                if (commands != null)
+                {
+                    foreach (Command command in commands.commands)
+                    {
+                        #region Deleting the just fetched commands
+                        string JSON_response = cls_Network.http_DELETE("api/commands/" + command.id);
+                        if (JSON_response != null)
+                            cls_Utility.Log("\r\n" + "Fetched command [" + command.id + "] deleted successfully.");
+                        #endregion
+
+                        if (cls_Network.ValidateIPv4(command.forWhom))
+                        {
+                            string localhostname = 
+                        }
+
+                        #region Running fetched command(s)
+                        //object result = cls_Interpreter.RunACommand(command.text, null);
+                        //if (result != null)
+                        //    cls_Utility.Log("\r\n" + result);
+                        #endregion
+
+                        #region Adding deleted command(s) to History
+                        cls_Utility.Log("\r\n" + "Deleted command [" + command.id + "] added to history successfully.");
+                        #endregion
+                    }
+
+                }
             }
+            else
+            {
+                //cls_Utility.Log("\r\n" + "TIK: no Https command found.");
+            }
+            #endregion
 
             elapsedMinutes++;
 
@@ -150,6 +210,7 @@ namespace grace_soul
             //    cls_Utility.Log("** every 4 minutes@@@@@@@@@@@");
             //}
 
+            #region Loading Schedules 
             try
             {
                 cls_Scheduler.scheduleList = null;
@@ -161,9 +222,11 @@ namespace grace_soul
             }
             catch(Exception ex)
             {
-                cls_Utility.Log("! Error - Service1. loading schedules failed. " + ex.Message);
+                cls_Utility.Log("! Error - Service1. Loading schedules failed. " + ex.Message);
             }
+            #endregion
 
+            #region Checking schedules that matches
             if (cls_Scheduler.scheduleList != null && cls_Scheduler.scheduleList.Count > 0)
             {
                 DateTime now = DateTime.Now;
@@ -187,11 +250,10 @@ namespace grace_soul
                         _timer_runTotal.Interval = (1 * 60 * 1000) / sch.schedule_runTotal; //total divided by 1 minute
                         _timer_runTotal.Start();
                         //}
-
-                        
                     }
                 }
             }
+            #endregion
         }
 
         private void _timer_runTotal_Elapsed(object senderr, ElapsedEventArgs ee)

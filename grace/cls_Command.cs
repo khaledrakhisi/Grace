@@ -246,8 +246,11 @@ namespace grace
                                                     // registry
                                                     new Parameter(19, 210, "delete", "[registry delete, @key path, @key name]"),
                                                     new Parameter(19, 213, "hideme", "[registry hideme"),
-                                                    
-                                                 
+                                                    new Parameter(19, 214, "_override", "[registry _override, @appname to be overrided, @app appname to replace with] \r\n\t\t HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options \r\n\t\t(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. \r\n\t\t(example2: reg _override,excel.exe,notepad.exe)\r\n\t\t\r\n\t\t[registry _override, off, @appname which overrided] \r\n\t\t(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled."),
+                                                    //new Parameter(19, 215, "_override", "[registry _override, off, @appname which overrided] \r\n\t\t(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled."),
+
+                                                    // version
+                                                    //new Parameter(20, 250, "version", "[version]"),
                                                 };
 
 

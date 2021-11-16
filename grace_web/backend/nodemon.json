@@ -1,0 +1,10 @@
+{
+    "env": {
+      "DB_NAME": "GRACEDB",
+      "DB_USER": "graceadmin",
+      "DB_PASSWORD": "uNity#2019",
+      "PORTNUM": "7340",
+      "API_KEY" : "..."
+    }
+  }
+  

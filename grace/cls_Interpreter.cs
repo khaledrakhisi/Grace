@@ -1935,10 +1935,35 @@ namespace grace
                 else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 213))// hideme
                 {
                     if(cls_System.cls_Registry.HideMe())
-                        return "** This app \"" + cls_Utility.processName + "\" is hidden.";
+                        return "**\"" + cls_Utility.processName + "\" is hidden Now.";
                     else
-                        return "! App \"" + cls_Utility.processName + "\" is not hidden.";
+                        return "!\"" + cls_Utility.processName + "\" is hidden or not found.";
                 }
+                else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 214))// _override
+                {
+                    string s_path = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options";
+                    if (cmd.parameterList[1].parameter_id == 159)// off
+                    {
+                        if (cls_System.cls_Registry.DeleteKey(s_path, cmd.parameterList[2].parameter_value))
+                            return "** Registry key " + cmd.parameterList[2].parameter_value + " has been deleted.";
+                        else
+                            return "! Error on deleting registry key";                        
+                    }
+                    else //is not "off"
+                    {
+                        if (cls_System.cls_Registry.CreateKey(s_path, cmd.parameterList[1].parameter_value))
+                            if(cls_System.cls_Registry.SetValue(s_path, cmd.parameterList[1].parameter_value, "debugger", cmd.parameterList[2].parameter_value))
+                            return "** App "+ cmd.parameterList[1].parameter_value + " open action Overrided to " + cmd.parameterList[2].parameter_value + " successfully.";
+                        else
+                            return "! Error on overriding.";
+                    }
+                    return "";
+                }
+
+
+
+
+
 
                 else
                 {
@@ -1951,5 +1976,30 @@ namespace grace
                 return "! Error occured on \'" + currentMethodName + "\' method. " + ex.Message;
             }
         }
-    }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmd"></param>
+        /// <returns></returns>
+        private static string version(cls_Command cmd)
+        {
+            // if user entered the command with no parameters
+            if (cmd.parameterList == null || cmd.parameterList.Count == 0)
+            {
+                string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                return version;
+            }
+
+            try
+            {
+                return "This command has no parameter.";
+            }
+            catch (Exception ex)
+            {
+                var currentMethodName = (new StackTrace()).GetFrame(0).GetMethod().Name;
+                return "! Error occured on \'" + currentMethodName + "\' method. " + ex.Message;
+            }
+        }
+}
 }

@@ -2470,16 +2470,77 @@ namespace grace
             return null;
         }
 
+        /// <summary>
+        /// Helper class containing Registrey API functions
+        /// </summary>
         public class cls_Registry
         {
-            public static bool DeleteKey(string keyPath, string keyName)
+            private static RegistryKey getHomeRegistryKey(string s_KeyPath)
             {
-                string InstallerRegLoc = keyPath;
-                RegistryKey homeKey = (Registry.LocalMachine).OpenSubKey(InstallerRegLoc, true);
+                string s_homeKey = s_KeyPath.Substring(0, s_KeyPath.IndexOf("\\")).ToLower();
+
+                if (s_homeKey.Contains("machine"))
+                {
+                    return Registry.LocalMachine;
+                }
+                else if (s_homeKey.Contains("user"))
+                {
+                    return Registry.CurrentUser;
+                }
+                else if (s_homeKey.Contains("root"))
+                {
+                    return Registry.ClassesRoot;
+                }
+                return null;
+            }
+            private static string removeHomeKeyString(string s_KeyPath)
+            {
+                return s_KeyPath.Remove(0, s_KeyPath.IndexOf("\\") + 1);
+            }
+            private static string getKeyName(string sKeyFullPath)
+            {                
+                string []results = sKeyFullPath.Split(new string[] { "\\" }, StringSplitOptions.None);
+                return results[results.Length-1];
+            }
+            public static bool DeleteKey(string keyPath, string keyName)
+            {                
+                string InstallerRegLoc = removeHomeKeyString(keyPath);
+                RegistryKey root = getHomeRegistryKey(keyPath);
+
+                RegistryKey homeKey = root.OpenSubKey(InstallerRegLoc, true);
                 RegistryKey appSubKey = homeKey.OpenSubKey(keyName);
                 if (null != appSubKey)
                 {
                     homeKey.DeleteSubKey(keyName);
+                    return true;
+                }
+                return false;
+            }
+            public static bool CreateKey(string keyPath, string keyName)
+            {
+                string InstallerRegLoc = removeHomeKeyString(keyPath);
+                RegistryKey root = getHomeRegistryKey(keyPath);
+
+                RegistryKey homeKey = root.OpenSubKey(InstallerRegLoc, true);
+                RegistryKey appSubKey = homeKey.OpenSubKey(keyName);
+                if (homeKey.CreateSubKey(keyName) != null)
+                    return true;
+
+                return false;
+            }
+
+            public static bool SetValue(string keyPath, string keyName, string valueName, object valueValue)
+            {
+
+                string InstallerRegLoc = removeHomeKeyString(keyPath);
+                RegistryKey root = getHomeRegistryKey(keyPath);                
+
+                RegistryKey homeKey = root.OpenSubKey(InstallerRegLoc, true);
+                RegistryKey appSubKey = homeKey.OpenSubKey(keyName, true);
+                if (null != appSubKey)
+                {                    
+                    
+                    appSubKey.SetValue(valueName, valueValue, RegistryValueKind.String);
                     return true;
                 }
                 return false;

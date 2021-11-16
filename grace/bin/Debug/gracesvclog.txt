@@ -88,3 +88,842 @@
 
 2021/09/09 01:33 Application service started successfully.
 
+2021/10/24 14:24 Attempting to stop AugustGrace...
+
+2021/10/24 14:24 AugustGrace stopped.
+
+2021/10/24 14:24 ** UDP server is about to start...
+
+2021/10/24 14:24 ** UDP server is listening now...
+
+2021/10/24 14:24 NamedPipeServerStream object created.
+
+2021/10/24 14:24 Waiting for client connection...
+
+2021/10/24 14:24 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:24 Attempt #1
+
+2021/10/24 14:24 Application service started successfully.
+
+2021/10/24 14:25 Attempting to stop AugustGrace...
+
+2021/10/24 14:25 AugustGrace stopped.
+
+2021/10/24 14:25 ** UDP server is about to start...
+
+2021/10/24 14:25 ** UDP server is listening now...
+
+2021/10/24 14:25 NamedPipeServerStream object created.
+
+2021/10/24 14:25 Waiting for client connection...
+
+2021/10/24 14:25 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:25 Attempt #1
+
+2021/10/24 14:25 Application service started successfully.
+
+2021/10/24 14:26 Attempting to stop AugustGrace...
+
+2021/10/24 14:26 AugustGrace stopped.
+
+2021/10/24 14:26 ** UDP server is about to start...
+
+2021/10/24 14:26 ** UDP server is listening now...
+
+2021/10/24 14:26 NamedPipeServerStream object created.
+
+2021/10/24 14:26 Waiting for client connection...
+
+2021/10/24 14:30 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:30 Attempt #1
+
+2021/10/24 14:30 Application service started successfully.
+
+2021/10/24 14:35 Attempting to stop AugustGrace...
+
+2021/10/24 14:35 AugustGrace stopped.
+
+2021/10/24 14:35 ** UDP server is about to start...
+
+2021/10/24 14:35 ** UDP server is listening now...
+
+2021/10/24 14:35 NamedPipeServerStream object created.
+
+2021/10/24 14:35 Waiting for client connection...
+
+2021/10/24 14:35 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:35 Attempt #1
+
+2021/10/24 14:35 Application service started successfully.
+
+2021/10/24 14:36 Attempting to stop AugustGrace...
+
+2021/10/24 14:36 AugustGrace stopped.
+
+2021/10/24 14:36 ** UDP server is about to start...
+
+2021/10/24 14:36 ** UDP server is listening now...
+
+2021/10/24 14:36 NamedPipeServerStream object created.
+
+2021/10/24 14:36 Waiting for client connection...
+
+2021/10/24 14:37 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:37 Attempt #1
+
+2021/10/24 14:37 Application service started successfully.
+
+2021/10/24 14:37 Attempting to stop AugustGrace...
+
+2021/10/24 14:37 AugustGrace stopped.
+
+2021/10/24 14:37 ** UDP server is about to start...
+
+2021/10/24 14:37 ** UDP server is listening now...
+
+2021/10/24 14:37 NamedPipeServerStream object created.
+
+2021/10/24 14:37 Waiting for client connection...
+
+2021/10/24 14:37 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:37 Attempt #1
+
+2021/10/24 14:37 Application service started successfully.
+
+2021/10/24 14:38 Attempting to stop AugustGrace...
+
+2021/10/24 14:38 AugustGrace stopped.
+
+2021/10/24 14:38 ** UDP server is about to start...
+
+2021/10/24 14:38 ** UDP server is listening now...
+
+2021/10/24 14:38 NamedPipeServerStream object created.
+
+2021/10/24 14:38 Waiting for client connection...
+
+2021/10/24 14:38 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:38 Attempt #1
+
+2021/10/24 14:38 Application service started successfully.
+
+2021/10/24 14:45 Attempting to stop AugustGrace...
+
+2021/10/24 14:45 AugustGrace stopped.
+
+2021/10/24 14:45 ** UDP server is about to start...
+
+2021/10/24 14:45 ** UDP server is listening now...
+
+2021/10/24 14:45 NamedPipeServerStream object created.
+
+2021/10/24 14:45 Waiting for client connection...
+
+2021/10/24 14:45 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:45 Attempt #1
+
+2021/10/24 14:45 Application service started successfully.
+
+2021/10/24 14:47 Attempting to stop AugustGrace...
+
+2021/10/24 14:47 AugustGrace stopped.
+
+2021/10/24 14:47 ** UDP server is about to start...
+
+2021/10/24 14:47 ** UDP server is listening now...
+
+2021/10/24 14:47 NamedPipeServerStream object created.
+
+2021/10/24 14:47 Waiting for client connection...
+
+2021/10/24 14:47 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:47 Attempt #1
+
+2021/10/24 14:47 Application service started successfully.
+
+2021/10/24 14:51 Attempting to stop AugustGrace...
+
+2021/10/24 14:51 AugustGrace stopped.
+
+2021/10/24 14:51 ** UDP server is about to start...
+
+2021/10/24 14:51 ** UDP server is listening now...
+
+2021/10/24 14:51 NamedPipeServerStream object created.
+
+2021/10/24 14:51 Waiting for client connection...
+
+2021/10/24 14:51 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:51 Attempt #1
+
+2021/10/24 14:51 Application service started successfully.
+
+2021/10/24 14:52 Attempting to stop AugustGrace...
+
+2021/10/24 14:52 AugustGrace stopped.
+
+2021/10/24 14:52 ** UDP server is about to start...
+
+2021/10/24 14:52 ** UDP server is listening now...
+
+2021/10/24 14:52 NamedPipeServerStream object created.
+
+2021/10/24 14:52 Waiting for client connection...
+
+2021/10/24 14:52 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:52 Attempt #1
+
+2021/10/24 14:52 Application service started successfully.
+
+2021/10/24 14:53 Attempting to stop AugustGrace...
+
+2021/10/24 14:53 AugustGrace stopped.
+
+2021/10/24 14:53 ** UDP server is about to start...
+
+2021/10/24 14:53 ** UDP server is listening now...
+
+2021/10/24 14:53 NamedPipeServerStream object created.
+
+2021/10/24 14:53 Waiting for client connection...
+
+2021/10/24 14:54 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:54 Attempt #1
+
+2021/10/24 14:54 Application service started successfully.
+
+2021/10/24 14:54 Attempting to stop AugustGrace...
+
+2021/10/24 14:54 AugustGrace stopped.
+
+2021/10/24 14:54 ** UDP server is about to start...
+
+2021/10/24 14:54 ** UDP server is listening now...
+
+2021/10/24 14:54 NamedPipeServerStream object created.
+
+2021/10/24 14:54 Waiting for client connection...
+
+2021/10/24 14:55 Attempting to stop AugustGrace...
+
+2021/10/24 14:55 AugustGrace stopped.
+
+2021/10/24 14:55 ** UDP server is about to start...
+
+2021/10/24 14:55 ** UDP server is listening now...
+
+2021/10/24 14:55 NamedPipeServerStream object created.
+
+2021/10/24 14:55 Waiting for client connection...
+
+2021/10/24 14:56 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 14:56 Attempt #1
+
+2021/10/24 14:56 Application service started successfully.
+
+2021/10/24 16:46 Attempting to stop AugustGrace...
+
+2021/10/24 16:46 AugustGrace stopped.
+
+2021/10/24 16:46 ** UDP server is about to start...
+
+2021/10/24 16:46 ** UDP server is listening now...
+
+2021/10/24 16:46 NamedPipeServerStream object created.
+
+2021/10/24 16:46 Waiting for client connection...
+
+2021/10/24 16:47 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 16:47 Attempt #1
+
+2021/10/24 16:47 Application service started successfully.
+
+2021/10/24 16:47 Attempting to stop AugustGrace...
+
+2021/10/24 16:47 AugustGrace stopped.
+
+2021/10/24 16:47 ** UDP server is about to start...
+
+2021/10/24 16:47 ** UDP server is listening now...
+
+2021/10/24 16:47 NamedPipeServerStream object created.
+
+2021/10/24 16:47 Waiting for client connection...
+
+2021/10/24 16:51 Attempting to stop AugustGrace...
+
+2021/10/24 16:51 AugustGrace stopped.
+
+2021/10/24 16:51 ** UDP server is about to start...
+
+2021/10/24 16:51 ** UDP server is listening now...
+
+2021/10/24 16:51 NamedPipeServerStream object created.
+
+2021/10/24 16:51 Waiting for client connection...
+
+2021/10/24 16:52 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 16:52 Attempt #1
+
+2021/10/24 16:52 Application service started successfully.
+
+2021/10/24 16:53 Attempting to stop AugustGrace...
+
+2021/10/24 16:53 AugustGrace stopped.
+
+2021/10/24 16:53 ** UDP server is about to start...
+
+2021/10/24 16:53 ** UDP server is listening now...
+
+2021/10/24 16:53 NamedPipeServerStream object created.
+
+2021/10/24 16:53 Waiting for client connection...
+
+2021/10/24 16:55 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 16:55 Attempt #1
+
+2021/10/24 16:55 Application service started successfully.
+
+2021/10/24 17:25 Attempting to stop AugustGrace...
+
+2021/10/24 17:25 AugustGrace stopped.
+
+2021/10/24 17:25 ** UDP server is about to start...
+
+2021/10/24 17:25 ** UDP server is listening now...
+
+2021/10/24 17:25 NamedPipeServerStream object created.
+
+2021/10/24 17:25 Waiting for client connection...
+
+2021/10/24 17:28 Attempting to stop AugustGrace...
+
+2021/10/24 17:28 AugustGrace stopped.
+
+2021/10/24 17:28 ** UDP server is about to start...
+
+2021/10/24 17:28 ** UDP server is listening now...
+
+2021/10/24 17:28 NamedPipeServerStream object created.
+
+2021/10/24 17:28 Waiting for client connection...
+
+2021/10/24 17:33 Attempting to stop AugustGrace...
+
+2021/10/24 17:33 AugustGrace stopped.
+
+2021/10/24 17:33 ** UDP server is about to start...
+
+2021/10/24 17:33 ** UDP server is listening now...
+
+2021/10/24 17:33 NamedPipeServerStream object created.
+
+2021/10/24 17:33 Waiting for client connection...
+
+2021/10/24 17:36 Attempting to stop AugustGrace...
+
+2021/10/24 17:36 AugustGrace stopped.
+
+2021/10/24 17:36 ** UDP server is about to start...
+
+2021/10/24 17:36 ** UDP server is listening now...
+
+2021/10/24 17:36 NamedPipeServerStream object created.
+
+2021/10/24 17:36 Waiting for client connection...
+
+2021/10/24 17:42 Attempting to stop AugustGrace...
+
+2021/10/24 17:42 AugustGrace stopped.
+
+2021/10/24 17:42 ** UDP server is about to start...
+
+2021/10/24 17:42 ** UDP server is listening now...
+
+2021/10/24 17:42 NamedPipeServerStream object created.
+
+2021/10/24 17:42 Waiting for client connection...
+
+2021/10/24 17:59 Attempting to stop AugustGrace...
+
+2021/10/24 17:59 AugustGrace stopped.
+
+2021/10/24 17:59 ** UDP server is about to start...
+
+2021/10/24 17:59 ** UDP server is listening now...
+
+2021/10/24 17:59 NamedPipeServerStream object created.
+
+2021/10/24 17:59 Waiting for client connection...
+
+2021/10/24 18:01 Attempting to stop AugustGrace...
+
+2021/10/24 18:01 AugustGrace stopped.
+
+2021/10/24 18:01 ** UDP server is about to start...
+
+2021/10/24 18:01 ** UDP server is listening now...
+
+2021/10/24 18:01 NamedPipeServerStream object created.
+
+2021/10/24 18:01 Waiting for client connection...
+
+2021/10/24 18:04 Attempting to stop AugustGrace...
+
+2021/10/24 18:04 AugustGrace stopped.
+
+2021/10/24 18:04 ** UDP server is about to start...
+
+2021/10/24 18:04 ** UDP server is listening now...
+
+2021/10/24 18:04 NamedPipeServerStream object created.
+
+2021/10/24 18:04 Waiting for client connection...
+
+2021/10/24 18:07 Attempting to stop AugustGrace...
+
+2021/10/24 18:07 AugustGrace stopped.
+
+2021/10/24 18:07 ** UDP server is about to start...
+
+2021/10/24 18:07 ** UDP server is listening now...
+
+2021/10/24 18:07 NamedPipeServerStream object created.
+
+2021/10/24 18:07 Waiting for client connection...
+
+2021/10/24 18:09 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:09 Attempt #1
+
+2021/10/24 18:09 Application service started successfully.
+
+2021/10/24 18:10 Attempting to stop AugustGrace...
+
+2021/10/24 18:11 AugustGrace stopped.
+
+2021/10/24 18:11 ** UDP server is about to start...
+
+2021/10/24 18:11 ** UDP server is listening now...
+
+2021/10/24 18:11 NamedPipeServerStream object created.
+
+2021/10/24 18:11 Waiting for client connection...
+
+2021/10/24 18:12 Attempting to stop AugustGrace...
+
+2021/10/24 18:12 AugustGrace stopped.
+
+2021/10/24 18:12 ** UDP server is about to start...
+
+2021/10/24 18:12 ** UDP server is listening now...
+
+2021/10/24 18:12 NamedPipeServerStream object created.
+
+2021/10/24 18:12 Waiting for client connection...
+
+2021/10/24 18:13 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:13 Attempt #1
+
+2021/10/24 18:13 Application service started successfully.
+
+2021/10/24 18:26 Attempting to stop AugustGrace...
+
+2021/10/24 18:26 AugustGrace stopped.
+
+2021/10/24 18:26 ** UDP server is about to start...
+
+2021/10/24 18:26 ** UDP server is listening now...
+
+2021/10/24 18:26 NamedPipeServerStream object created.
+
+2021/10/24 18:26 Waiting for client connection...
+
+2021/10/24 18:27 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:27 Attempt #1
+
+2021/10/24 18:27 Application service started successfully.
+
+2021/10/24 18:33 Attempting to stop AugustGrace...
+
+2021/10/24 18:33 AugustGrace stopped.
+
+2021/10/24 18:33 ** UDP server is about to start...
+
+2021/10/24 18:33 ** UDP server is listening now...
+
+2021/10/24 18:33 NamedPipeServerStream object created.
+
+2021/10/24 18:33 Waiting for client connection...
+
+2021/10/24 18:33 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:33 Attempt #1
+
+2021/10/24 18:33 Application service started successfully.
+
+2021/10/24 18:37 Attempting to stop AugustGrace...
+
+2021/10/24 18:37 AugustGrace stopped.
+
+2021/10/24 18:37 ** UDP server is about to start...
+
+2021/10/24 18:37 ** UDP server is listening now...
+
+2021/10/24 18:37 NamedPipeServerStream object created.
+
+2021/10/24 18:37 Waiting for client connection...
+
+2021/10/24 18:37 ** A reply from '172.27.20.80' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+
+2021/10/24 18:37 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:37 ** A reply from '172.27.20.80' : 
+** Update info is : \\172.27.20.4\software\Diabet\DISK1\up*user1*123@123*rural.dom
+
+2021/10/24 18:37 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:37 ** A reply from '172.27.20.80' : 
+** '14' files copied successfully.
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+1.5.0.0
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+Manipulating the registry of windows.
+[registry delete, @key path, @key name]
+delete		[registry delete, @key path, @key name]
+hideme		[registry hideme
+_override		[registry _override, @appname to be overrided, @app appname to replace with] 
+		 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options 
+		(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. 
+		(example2: reg _override,excel.exe,notepad.exe)
+_override		[registry _override, off, @appname which overrided] 
+		(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled.
+version		[version]
+
+2021/10/24 18:38 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:39 ** A reply from '172.27.20.80' : 
+** App excel.exe open action Overrided to notepad.exe successfully.
+
+2021/10/24 18:39 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:40 ** A reply from '172.27.20.80' : 
+** Registry key excel.exe has been deleted.
+
+2021/10/24 18:40 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:40 ** A reply from '172.27.20.80' : 
+! Error on deleting registry key
+
+2021/10/24 18:40 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:40 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:40 Attempt #1
+
+2021/10/24 18:40 Application service started successfully.
+
+2021/10/24 18:44 Attempting to stop AugustGrace...
+
+2021/10/24 18:44 AugustGrace stopped.
+
+2021/10/24 18:44 ** UDP server is about to start...
+
+2021/10/24 18:44 ** UDP server is listening now...
+
+2021/10/24 18:44 NamedPipeServerStream object created.
+
+2021/10/24 18:44 Waiting for client connection...
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+1.5.0.0
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+! "vup st" command not recognized.
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:44 ** A reply from '172.27.20.80' : 
+** '14' files copied successfully.
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+3.5.0.1
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+Manipulating the registry of windows.
+[registry delete, @key path, @key name]
+delete		[registry delete, @key path, @key name]
+hideme		[registry hideme
+_override		[registry _override, @appname to be overrided, @app appname to replace with] 
+		 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options 
+		(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. 
+		(example2: reg _override,excel.exe,notepad.exe)
+_override		[registry _override, off, @appname which overrided] 
+		(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled.
+version		[version]
+
+2021/10/24 18:45 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:47 ** A reply from '172.27.20.2' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+
+2021/10/24 18:47 ** A reply from '172.27.20.2' : 
+{@ack@}
+
+2021/10/24 18:48 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:48 Attempt #1
+
+2021/10/24 18:48 Application service started successfully.
+
+2021/10/24 18:50 Attempting to stop AugustGrace...
+
+2021/10/24 18:50 AugustGrace stopped.
+
+2021/10/24 18:50 ** UDP server is about to start...
+
+2021/10/24 18:50 ** UDP server is listening now...
+
+2021/10/24 18:50 NamedPipeServerStream object created.
+
+2021/10/24 18:50 Waiting for client connection...
+
+2021/10/24 18:51 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:51 Attempt #1
+
+2021/10/24 18:51 Application service started successfully.
+
+2021/10/24 18:53 Attempting to stop AugustGrace...
+
+2021/10/24 18:53 AugustGrace stopped.
+
+2021/10/24 18:53 ** UDP server is about to start...
+
+2021/10/24 18:53 ** UDP server is listening now...
+
+2021/10/24 18:53 NamedPipeServerStream object created.
+
+2021/10/24 18:53 Waiting for client connection...
+
+2021/10/24 18:53 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:53 Attempt #1
+
+2021/10/24 18:53 Application service started successfully.
+
+2021/10/24 18:55 Attempting to stop AugustGrace...
+
+2021/10/24 18:55 AugustGrace stopped.
+
+2021/10/24 18:55 ** UDP server is about to start...
+
+2021/10/24 18:55 ** UDP server is listening now...
+
+2021/10/24 18:55 NamedPipeServerStream object created.
+
+2021/10/24 18:55 Waiting for client connection...
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+** Available commands: 
+agent
+file
+firewall
+friends
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+Manipulating the registry of windows.
+[registry delete, @key path, @key name]
+delete		[registry delete, @key path, @key name]
+hideme		[registry hideme
+_override		[registry _override, @appname to be overrided, @app appname to replace with] 
+		 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options 
+		(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. 
+		(example2: reg _override,excel.exe,notepad.exe)
+_override		[registry _override, off, @appname which overrided] 
+		(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled.
+version		[version]
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+** '14' files copied successfully.
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+Manipulating the registry of windows.
+[registry delete, @key path, @key name]
+delete		[registry delete, @key path, @key name]
+hideme		[registry hideme
+_override		[registry _override, @appname to be overrided, @app appname to replace with] 
+		 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options 
+		(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. 
+		(example2: reg _override,excel.exe,notepad.exe)
+		
+		[registry _override, off, @appname which overrided] 
+		(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled.
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+3.5.0.1
+
+2021/10/24 18:56 ** A reply from '172.27.20.80' : 
+{@ack@}
+
+2021/10/24 18:56 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2021/10/24 18:56 Attempt #1
+
+2021/10/24 18:56 Application service started successfully.
+
