@@ -65,20 +65,24 @@ async function addNew(req, res, next) {
     return next(new HttpError("Adding new command was failed.", 500));
   }
 
+  console.log(text + " command added.");
+
   res.status(201).json({ command: command });
 }
 
 const deleteById = async (req, res, next) => {
   const id = req.params.commandId; //{placeid:"the value"}
-  console.log(id);
-
+  
   let command = null;
   try {
     command = await Command.findById(id);
   } catch (err) {
     console.log(err);
     return next(
-      new HttpError("commands deletion findbyId: something's wrong with the database!", 500)
+      new HttpError(
+        "commands deletion findbyId: something's wrong with the database!",
+        500
+      )
     );
   }
 
@@ -104,10 +108,15 @@ const deleteById = async (req, res, next) => {
     // command.commandId.places.pull(command);
     // await command.userId.save({ session });
     await session.commitTransaction();
+    
+    console.log(id + " command deleted.");
   } catch (err) {
     console.log(err);
     return next(
-      new HttpError("command deleteion: something's wrong with the database!", 402)
+      new HttpError(
+        "command deleteion: something's wrong with the database!",
+        402
+      )
     );
   }
 

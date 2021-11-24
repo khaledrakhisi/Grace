@@ -145,5 +145,10 @@ namespace grace
             }
         }
 
+        public static bool IsFileExist(string fileFullPath)
+        {
+            return File.Exists(cls_File.PopulatePath(fileFullPath));
+        }
+
     }
 }

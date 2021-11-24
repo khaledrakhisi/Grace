@@ -23,6 +23,12 @@ namespace grace
             CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
             frm_terminal = this;
+
+            if (!cls_File.IsFileExist(@".\grace.lock"))
+            {
+                cls_Utility.Log("die grace.lock nicht gefunden.  bitte erstelle es.");
+                Environment.Exit(-1);
+            }
         }
 
         // Static form. Null if no form created yet.

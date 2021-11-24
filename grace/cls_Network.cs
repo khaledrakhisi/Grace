@@ -13,6 +13,7 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace grace
@@ -27,41 +28,83 @@ namespace grace
         private static readonly byte[] buffer = new byte[BUFFER_SIZE];
         public const string pingableIPAddress = "172.27.20.1";
         private static HttpClient httpClient;
+        //private static bool is_http_command_sent = false;
 
         private static UdpClient udpServer = null;//new UdpClient(PORT);    
         private static NamedPipeServerStream pipeServer = null;
 
         static cls_Network()
         {
-            #region Initializing HttpsClient object
-            httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri("http://localhost:7340");
-            // Add an Accept header for JSON format.
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            #endregion
+            try
+            {
+                #region Initializing HttpsClient object
+                httpClient = new HttpClient();
+                //httpClient.BaseAddress = new Uri("http://localhost:7340");
+                httpClient.BaseAddress = new Uri("http://grace.khaledr.ir");
+                // Add an Accept header for JSON format.
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public static string http_GET(string s_subURL)
+        public static async Task<string> Http_GET(string s_subURL)
         {
-            HttpResponseMessage response = httpClient.GetAsync(s_subURL).Result;  // Blocking call!
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var data = response.Content.ReadAsStringAsync().Result;
-                return data;
+                HttpResponseMessage response = await httpClient.GetAsync(s_subURL);  // Blocking call!
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = response.Content.ReadAsStringAsync().Result;
+                    return data;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
             return null;
         }
-        public static string http_DELETE(string s_subURL)
+        public static async Task<string> Http_DELETE(string s_subURL)
         {
-            HttpResponseMessage response = httpClient.DeleteAsync(s_subURL).Result;
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var data = response.Content.ReadAsStringAsync().Result;
-                return data;
+                HttpResponseMessage response = await httpClient.DeleteAsync(s_subURL);
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = response.Content.ReadAsStringAsync().Result;
+                    return data;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
             return null;
+        }
+        public static async Task<string> Http_POST(string s_subURL, HttpContent Json)
+        {
+            try
+            {               
+                HttpResponseMessage response = await httpClient.PostAsync(s_subURL, Json);
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = response.Content.ReadAsStringAsync().Result;
+                    return data;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return null;
+
         }
 
         public static bool ValidateIPv4(string ipString)
