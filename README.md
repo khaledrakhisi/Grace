@@ -1,5 +1,5 @@
 # Grace
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](/assets/grace.png)
 
 A powerful Terminal app that made to bring magic! 🖥🎇
 This App consists of two part
