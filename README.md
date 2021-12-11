@@ -1,4 +1,5 @@
 # Grace
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 A powerful Terminal app that made to bring magic! 🖥🎇
 This App consists of two part
 
