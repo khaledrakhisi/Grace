@@ -1,5 +1,5 @@
 # Grace
-![This is an image](/assets/grace.png)
+![This is an image](./grace.png)
 
 A powerful Terminal app that made to bring magic! 🖥🎇
 This App consists of two part
