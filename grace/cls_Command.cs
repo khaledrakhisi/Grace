@@ -231,7 +231,7 @@ namespace grace
                                                     new Parameter(15, 193, "disconnect", "[ssh dissconnect]"),
 
                                                     // firewall
-                                                    new Parameter(16, 195, "add", "[firewall add, @ip to block]"),
+                                                    new Parameter(16, 195, "add", "[firewall add, @ip | @ip1,@ip2,... | @ip-@ip] \r\n  \t\t(fir add,10.20.30.40)\r\n  \t\t(fir add,10.20.30.40,50.60.70.80)\r\n  \t\t(fir add,192.168.0.1-192.168.5.254)"),
                                                     new Parameter(16, 196, "delete", "[firewall delete, @ip to delete]"),
                                                     new Parameter(16, 197, "clear", "[firewall clear](clear the entire block list and off the firewall.)"),
                                                     new Parameter(16, 198, "setup", "[firewall setup](clear the entire block list and off the firewall.)"),

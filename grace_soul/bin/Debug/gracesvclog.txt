@@ -1,0 +1,170 @@
+2022/02/27 21:23 ** UDP server is about to start...
+
+2022/02/27 21:23 ** UDP server is listening now...
+
+2022/02/27 21:23 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:23 ** Scheduler Start................. OK
+
+2022/02/27 21:23 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:32 ** UDP server is about to start...
+
+2022/02/27 21:32 ** UDP server is listening now...
+
+2022/02/27 21:32 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:32 ** Scheduler Start................. OK
+
+2022/02/27 21:32 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:42 ** UDP server is about to start...
+
+2022/02/27 21:42 ** UDP server is listening now...
+
+2022/02/27 21:42 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:42 ** Scheduler Start................. OK
+
+2022/02/27 21:42 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:43 ** UDP server is about to start...
+
+2022/02/27 21:43 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:43 ** UDP server is listening now...
+
+2022/02/27 21:43 ** Scheduler Start................. OK
+
+2022/02/27 21:43 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:45 ** UDP server is about to start...
+
+2022/02/27 21:45 ** UDP server is listening now...
+
+2022/02/27 21:45 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:45 ** Scheduler Start................. OK
+
+2022/02/27 21:45 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:47 ** UDP server is about to start...
+
+2022/02/27 21:47 ** UDP server is listening now...
+
+2022/02/27 21:47 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:47 ** Scheduler Start................. OK
+
+2022/02/27 21:47 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 21:53 ** UDP server is about to start...
+
+2022/02/27 21:53 ** UDP server is listening now...
+
+2022/02/27 21:53 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 21:53 ** Scheduler Start................. OK
+
+2022/02/27 21:53 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:21 ** UDP server is about to start...
+
+2022/02/27 22:21 ** UDP server is listening now...
+
+2022/02/27 22:21 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:21 ** Scheduler Start................. OK
+
+2022/02/27 22:21 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:21 ** UDP server is about to start...
+
+2022/02/27 22:21 ** UDP server is listening now...
+
+2022/02/27 22:21 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:21 ** Scheduler Start................. OK
+
+2022/02/27 22:21 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:34 ** UDP server is about to start...
+
+2022/02/27 22:34 ** UDP server is listening now...
+
+2022/02/27 22:34 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:34 ** Scheduler Start................. OK
+
+2022/02/27 22:34 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:36 ** UDP server is about to start...
+
+2022/02/27 22:36 ** UDP server is listening now...
+
+2022/02/27 22:36 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:36 ** Scheduler Start................. OK
+
+2022/02/27 22:36 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:38 ** UDP server is about to start...
+
+2022/02/27 22:38 ** UDP server is listening now...
+
+2022/02/27 22:38 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:38 ** Scheduler Start................. OK
+
+2022/02/27 22:38 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:40 ** UDP server is about to start...
+
+2022/02/27 22:40 ** UDP server is listening now...
+
+2022/02/27 22:40 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:40 ** Scheduler Start................. OK
+
+2022/02/27 22:40 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:53 ** UDP server is about to start...
+
+2022/02/27 22:53 ** UDP server is listening now...
+
+2022/02/27 22:53 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:53 ** Scheduler Start................. OK
+
+2022/02/27 22:53 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:54 ** UDP server is about to start...
+
+2022/02/27 22:54 ** UDP server is listening now...
+
+2022/02/27 22:54 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:54 ** Scheduler Start................. OK
+
+2022/02/27 22:54 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:55 ** UDP server is about to start...
+
+2022/02/27 22:55 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:55 ** UDP server is listening now...
+
+2022/02/27 22:55 ** Scheduler Start................. OK
+
+2022/02/27 22:55 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+
+2022/02/27 22:56 ** UDP server is about to start...
+
+2022/02/27 22:56 ** UDP server is listening now...
+
+2022/02/27 22:56 ! Error on loading scheduler file. Unable to find the specified file.
+
+2022/02/27 22:56 ** Scheduler Start................. OK
+
+2022/02/27 22:56 ! Error on starting _timer_trigger.Object reference not set to an instance of an object.
+

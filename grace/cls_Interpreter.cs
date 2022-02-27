@@ -12,6 +12,7 @@ using System.ServiceProcess;
 using System.Threading;
 using System.Windows.Forms;
 using static grace.cls_File;
+using static grace.cls_Network;
 
 namespace grace
 {
@@ -1721,6 +1722,7 @@ namespace grace
             catch (Exception ex)
             {
                 cls_Utility.Log("! Error on instanciating firewall object." + ex.Message);
+                return "! Error on instanciating firewall object." + ex.Message;
             }
 
             try
@@ -1737,10 +1739,47 @@ namespace grace
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 195))// add
                 {
-                    if (fwall.FirewallAddToBlockList(cmd.parameterList[1].parameter_value))
-                        return "** Firewall block list updated.";
-                    else
-                        return "! IP is already exsist.";
+                    string s_IPExpression = cmd.parameterList[1].parameter_value;
+                    List<string> IPs = new List<string>();
+
+                    if (s_IPExpression != "")
+                    {
+                        if(cmd.parameterList.Count > 2)
+                            s_IPExpression += "," + string.Join(",", cmd.parameterList.Select(m => m.parameter_value).Skip(2).ToArray());
+
+                        if (s_IPExpression.Contains(",")) // multi ip add
+                            IPs = s_IPExpression.Split(new char[] { ',' }).ToList();
+
+                        else if (s_IPExpression.Contains("-")) // range ip add
+                        {
+                            s_IPExpression = s_IPExpression.Substring(s_IPExpression.IndexOf(",") + 1);
+                            string[] ip_begin_end = s_IPExpression.Split(new char[] { '-' });
+                            cls_IPTools it = new cls_IPTools();
+                            IEnumerable<string> addresses = it.GetIPRange(IPAddress.Parse(ip_begin_end[0]), IPAddress.Parse(ip_begin_end[1]));
+                            foreach (string ad in addresses)
+                            {
+                                IPs.Add(ad);
+                            }
+                        }
+                        else // single ip add
+                        {
+                            IPs.Add(s_IPExpression);
+                        }
+
+                        string sMessage = $"IPs were added. \r\n";
+                        int i_total = 0, i_exception = 0;
+                        foreach (string ip in IPs)
+                        {                            
+                            if (!fwall.FirewallAddToBlockList(ip))
+                                i_exception++;
+                            else
+                                i_total++;
+                            
+                        }
+                        return sMessage + $"Total: {+i_total} Exception: {i_exception}" ;
+                    }
+
+                    return "! Error occured while adding IP(s) to firewall";
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 196))// delete
                 {

