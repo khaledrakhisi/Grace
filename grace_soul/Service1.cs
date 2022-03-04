@@ -26,6 +26,7 @@ namespace grace_soul
         private System.Timers.Timer _timer_scheduler, /*_timer_trigger,*/ _timer_runTotal;
         private schedule sch_to_run = null;
         private static ulong elapsedMinutes = 0;
+        private static int totalRanNumber = 0;
 
         public Service1()
         {
@@ -239,7 +240,7 @@ namespace grace_soul
                                     localhostAddress = cls_System.GetLocalComputerName();
                                 }
 
-                                // Run the command only if it is for you
+                                // Run the command only if it is for this computer
                                 if (localhostAddress == command.forWhom)
                                 {
                                     DeleteHTTPCommand(command);
@@ -281,7 +282,7 @@ namespace grace_soul
                 }
                 #endregion
 
-            }catch(Exception ex)
+            }catch(Exception)
             {
                 //cls_Utility.Log("! Error - Service1. Connecting to HTTP server faild. " + ex.Message);
             }
@@ -296,7 +297,7 @@ namespace grace_soul
             }
             catch(Exception ex)
             {
-                cls_Utility.Log("! Error - Service1. init run total schedule failed. " + ex.Message);
+                cls_Utility.Log("! Error - Service1. Init run total schedule failed. " + ex.Message);
             }
             //cls_Utility.Log("** Scheduler 1 Minute Tik(elapsed:"+elapsedMinutes.ToString()+")................. OK");
             //if (elapsedMinutes % 4/*randomEveryNSecond*/ < .3f)
@@ -320,7 +321,7 @@ namespace grace_soul
             }
             #endregion
 
-            #region Checking schedules that matches
+            #region Checking schedules that match
             if (cls_Scheduler.scheduleList != null && cls_Scheduler.scheduleList.Count > 0)
             {
                 DateTime now = DateTime.Now;
@@ -340,9 +341,11 @@ namespace grace_soul
                         sch_to_run = sch;
 
                         if (sch.schedule_runTotal <= 0) sch.schedule_runTotal = 1;
-
+                       
                         _timer_runTotal.Interval = (1 * 60 * 1000) / sch.schedule_runTotal; //total divided by 1 minute
                         _timer_runTotal.Start();
+                        //cls_Utility.Log("runtotal timer interval: " + _timer_runTotal.Interval.ToString());
+                        _timer_runTotal_Elapsed(null, null);
                         //}
                     }
                 }
@@ -355,6 +358,14 @@ namespace grace_soul
             object result = cls_Interpreter.RunACommand(sch_to_run.schedule_command, null);
             if (result != null)
                 cls_Utility.Log("\r\n" + result);
+
+            totalRanNumber++;
+            if (totalRanNumber >= sch_to_run.schedule_runTotal)
+            {
+                _timer_runTotal.Stop();
+                totalRanNumber = 0;
+                return;
+            }
         }
 
         private void _timer_trigger_Elapsed(object sender, System.Timers.ElapsedEventArgs e)

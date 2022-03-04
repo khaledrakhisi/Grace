@@ -101,8 +101,27 @@ namespace grace
                 //cls_Utility.Log("####Now date:" +cls_Utility.GetDateString(date)+" time:"+cls_Utility.GetTimeString(date)+"######Single schedule date:" + cls_Utility.GetDateString(sch.schedule_date) + "   Time:" + cls_Utility.GetTimeString(sch.schedule_time));
 
                 if ((cls_Utility.GetDateString(sch.schedule_date) == cls_Utility.GetDateString(date) || sch.schedule_date == "{@everyday@}") && (sch.schedule_time.StartsWith("{@everyminutes:")))
-                {
-                    ulong t = ulong.Parse(cls_Utility.GetElementValue("everyminutes", sch.schedule_time));
+                {                    
+                    string s_numOrNumRange = cls_Utility.GetElementValue("everyminutes", sch.schedule_time);                    
+                    ulong t = 1;
+                    try
+                    {
+                        if (s_numOrNumRange.Contains("-")) // if random range given
+                        {
+                            string[] numbers = s_numOrNumRange.Split(new Char[] { '-' });
+                            t = (ulong)new Random().Next(int.Parse(numbers[0]), int.Parse(numbers[1])+1);
+                        }
+                        else // if single number given
+                        {
+                            t = ulong.Parse(s_numOrNumRange);
+                        }
+                        cls_Utility.Log("Num or Numrange: " + t.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        cls_Utility.Log("! Error on getting and converting minutes range: " + ex.Message);
+                    }
+                    
                     //cls_Utility.Log("Checking timerElapsedMinutes(" + timerElapsedMinutes.ToString() + ")==schedulerRunTime(" + t);
                     if(timerElapsedMinutes % t/*randomEveryNSecond*/ < .3f)
                         schList.Add(sch);

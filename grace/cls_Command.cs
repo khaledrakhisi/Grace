@@ -99,6 +99,7 @@ namespace grace
                                                     new MasterCommand(18, "ping", "Pinging devices by @hostname|@ip using ICMP protocol.\r\n[ping @ip|@hostname]"),
                                                     new MasterCommand(19, "registry", "Manipulating the registry of windows.\r\n[registry delete, @key path, @key name]"),
                                                     new MasterCommand(20, "version", "Shows the current version of grace.\r\n[version]"),
+                                                    new MasterCommand(21, "log", "Turns the log on or off.\r\n[log on|off]"),
                                                        };
         //private static SlaveCommand[] slaveCommands =  {
         //                                            new SlaveCommand(4, 0, "telnet @"),
@@ -112,7 +113,7 @@ namespace grace
                                                     // scheduler
                                                     new Parameter(8, 10, "enable", "[scheduler enable]"),
                                                     new Parameter(8, 15, "disable", "[scheduler disable]"),
-                                                    new Parameter(8, 20, "addschedule",  "[scheduler addschedule, @date to run, @time to run, @total run, @command to run] (meta-parametrs can be used like {@everyday@} or {@everyminutes:N@})"),
+                                                    new Parameter(8, 20, "addschedule",  "[scheduler addschedule, @date to run, @time to run, @total run, @command to run] (meta-parametrs can be used like {@everyday@} or {@everyminutes:N@} or {@everyminutes:N1-N2@})"),
                                                     new Parameter(8, 23, "addtrigger",  "[scheduler addtrigger, {@On Event @}, {@On SubEvent @}, @total run, @command to run]"),
                                                     new Parameter(8, 25, "delete", "[scheduler delete, @index of schedule]"),                                                    
                                                     new Parameter(8, 35, "save", "[scheduler save]"),
@@ -235,6 +236,7 @@ namespace grace
                                                     new Parameter(16, 196, "delete", "[firewall delete, @ip to delete]"),
                                                     new Parameter(16, 197, "clear", "[firewall clear](clear the entire block list and off the firewall.)"),
                                                     new Parameter(16, 198, "setup", "[firewall setup](clear the entire block list and off the firewall.)"),
+                                                    new Parameter(16, 199, "toggle", "[firewall toggle](Toggles the Firewall's state.)"),
 
                                                     // agent
                                                     new Parameter(17, 201, "send", "[agent send, @command]"),

@@ -1776,7 +1776,7 @@ namespace grace
                                 i_total++;
                             
                         }
-                        return sMessage + $"Total: {+i_total} Exception: {i_exception}" ;
+                        return sMessage + $"Total: {i_total} Exception: {i_exception}" ;
                     }
 
                     return "! Error occured while adding IP(s) to firewall";
@@ -1797,6 +1797,10 @@ namespace grace
                 {
                     fwall = new cls_Network.cls_Firewall();
                     return "** Firewall is all set.";
+                }
+                else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 199))// toggle
+                {                    
+                    return $"** Firewall state changed to {fwall.FirewallToggle().ToString()}";
                 }
 
                 else
@@ -2039,6 +2043,50 @@ namespace grace
                 var currentMethodName = (new StackTrace()).GetFrame(0).GetMethod().Name;
                 return "! Error occured on \'" + currentMethodName + "\' method. " + ex.Message;
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmd"></param>
+        /// <returns></returns>
+        private static string log(cls_Command cmd)
+        {
+            // if user entered the command with no parameters
+            if (cmd.parameterList == null || cmd.parameterList.Count == 0)
+            {                
+                return "** Current log status is: " + (cls_Utility.isEchoOff ? "off" : "on");
+            }
+
+            try
+            {
+
+                if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id != -1)
+                {
+                    if (cmd.parameterList[0].parameter_id == 159)// off
+                    {
+                        cls_Utility.isEchoOff = true;
+                    }
+
+                    else if (cmd.parameterList[0].parameter_id == 158)// on
+                    {
+                        cls_Utility.isEchoOff = false;
+                    }                   
+
+                    else
+                    {
+                        return "! Unknown or Unsuitable Parameter \'" + cmd.parameterList[0].parameter_value + "\'.";
+                    }                   
+                }
+                return "** log state changed to \'" + cmd.parameterList[0].parameter_value + "\'.";
+
+            }
+            catch (Exception ex)
+            {
+                var currentMethodName = (new StackTrace()).GetFrame(0).GetMethod().Name;
+                return "! Error occured on \'" + currentMethodName + "\' method. " + ex.Message;
+            }
+
         }
 }
 }

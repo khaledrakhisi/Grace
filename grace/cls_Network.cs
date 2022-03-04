@@ -759,6 +759,12 @@ namespace grace
             [DllImport("grace_pf.dll", CallingConvention = CallingConvention.Cdecl)]
             static private extern void AddToBlockList(IntPtr pPacketFilterObject, string ip);
 
+            public enum FirewallStatus
+            {
+                STOPED = 0,
+                RUNNING = 1,                
+            }
+            public FirewallStatus firewallStatus = FirewallStatus.STOPED;
             private IntPtr pPacketFiltering = IntPtr.Zero;
             private List<string> blockList = null;
 
@@ -766,6 +772,7 @@ namespace grace
             {
                 pPacketFiltering = CreatePacketFilter();
                 blockList = new List<string>();
+                firewallStatus = FirewallStatus.STOPED;
             }
 
             public void FirewallStart()
@@ -781,6 +788,8 @@ namespace grace
                     }
                     
                     StartTheFirewall(pPacketFiltering);
+
+                    firewallStatus = FirewallStatus.RUNNING;
                 }                
             }
             public void FirewallStop()
@@ -788,7 +797,19 @@ namespace grace
                 if (pPacketFiltering != IntPtr.Zero)
                 {
                     StopTheFirewall(pPacketFiltering);
+                    firewallStatus = FirewallStatus.STOPED;
                 }
+            }
+
+            public FirewallStatus FirewallToggle()
+            {
+
+                if (firewallStatus == FirewallStatus.RUNNING)
+                    FirewallStop();
+                else
+                    FirewallStart();
+                
+                return firewallStatus;
             }
 
             public void FirewallClear()

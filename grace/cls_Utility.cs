@@ -11,9 +11,11 @@ namespace grace
         public static string processName = "grace";
         public static string serviceName = "AugustGrace";
         public static string updateConfigFilePath = cls_File.PopulatePath(@".\uppath.dat");
+        public static bool isEchoOff = true;
 
         public static void Log(string sLog, bool append = true, string sFileFullName = "")
         {
+            if (isEchoOff) return;
             try
             {
                 if (sFileFullName == "")
@@ -22,7 +24,7 @@ namespace grace
                 }
                 using (StreamWriter sw = new StreamWriter(sFileFullName, append))
                 {
-                    sw.WriteLine(DateTime.Now.ToString("yyyy/MM/dd") + " " + DateTime.Now.ToString("HH:mm") + " " + sLog + "\r\n");
+                    sw.WriteLine(DateTime.Now.ToString("yyyy/MM/dd") + " " + DateTime.Now.ToString("HH:mm:ss") + " " + sLog + "\r\n");
                 }
             }
             catch
