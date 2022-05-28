@@ -1,0 +1,176 @@
+2022/03/05 12:18:28 ** A reply from '172.27.3.54' : 
+{@command@}
+
+2022/03/05 12:18:28 ** Available commands: 
+agent
+file
+firewall
+friends
+log
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2022/03/05 12:18:28 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:18:50 ** A reply from '172.27.3.54' : 
+{@command@}log
+
+2022/03/05 12:18:50 ** Current log status is: on
+
+2022/03/05 12:18:50 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:19:14 ** A reply from '172.27.3.54' : 
+{@command@}log
+
+2022/03/05 12:19:14 ** Current log status is: on
+
+2022/03/05 12:19:14 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:19:31 ** A reply from '172.27.3.54' : 
+{@command@}up st
+
+2022/03/05 12:19:31 ! Error occured on 'update' method. The system cannot find the file specified
+
+2022/03/05 12:20:48 ** A reply from '172.27.3.54' : 
+{@command@}
+
+2022/03/05 12:20:48 ** Available commands: 
+agent
+file
+firewall
+friends
+log
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2022/03/05 12:20:48 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:21:39 ** A reply from '172.27.3.54' : 
+{@command@}
+
+2022/03/05 12:21:39 ** Available commands: 
+agent
+file
+firewall
+friends
+log
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2022/03/05 12:21:39 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:21:52 ** A reply from '172.27.3.54' : 
+{@command@}up st
+
+2022/03/05 12:21:52 ! Error occured on 'update' method. The system cannot find the file specified
+
+2022/03/05 12:21:52 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:25:36 ** A reply from '172.27.3.54' : 
+{@command@}
+
+2022/03/05 12:25:36 ** Available commands: 
+agent
+file
+firewall
+friends
+log
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2022/03/05 12:25:36 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:25:36 ** A reply from '172.27.3.54' : 
+{@command@}
+
+2022/03/05 12:25:36 ** Available commands: 
+agent
+file
+firewall
+friends
+log
+network
+ping
+power
+registry
+scheduler
+ssh
+system
+telnet
+trigger
+ui
+update
+version
+
+2022/03/05 12:25:36 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:25:52 ** A reply from '172.27.3.54' : 
+{@command@}log
+
+2022/03/05 12:25:52 ** Current log status is: on
+
+2022/03/05 12:25:52 ** A reply from '172.27.3.54' : 
+{@command@}log
+
+2022/03/05 12:25:52 ** Current log status is: on
+
+2022/03/05 12:25:52 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:25:53 ** A reply from '172.27.3.54' : 
+{@ack@}
+
+2022/03/05 12:30:31 Attempting to start AugustGrace. if it has't start please start the service manually.
+
+2022/03/05 12:30:31 Attempt #1
+
+2022/03/05 12:30:32 Application service started successfully.
+

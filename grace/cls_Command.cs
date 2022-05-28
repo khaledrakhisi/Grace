@@ -187,10 +187,10 @@ namespace grace
                                                     new Parameter(11, 145, "readonly", "[system  usb, readonly, enable|disable (optional)] (note: if on or off not supplied, returns the usb readonly status.)"),
 
                                                     // system service
-                                                    new Parameter(11, 146, "service", "[system services, on|off|show|names (optional)] (note: if on or off not supplied, returns the usb readonly status.)"),
+                                                    new Parameter(11, 146, "service", "[system services, on|off|show|names]"),
 
                                                     // system process
-                                                    new Parameter(11, 147, "process", "[system process, on|off|show|names (optional)] (note: if on or offnot supplied, returns the usb readonly status.)"),                                                    
+                                                    new Parameter(11, 147, "process", "[system process, on|off|show|names]"),                                                    
 
                                                     // system applications
                                                     new Parameter(11, 148, "applications", "[system applications, off|show|names (optional)] (note: if on or off not supplied, returns the usb readonly status.)"),
@@ -213,7 +213,9 @@ namespace grace
                                                     new Parameter(6, 126, "mac", "[network mac]"),
                                                     //new Parameter(6, 129, "ping", "[network ping, on|off, @ip address]"),
                                                     new Parameter(6, 132, "username", "[network username]"),
-                                                    new Parameter(6, 134, "sticktomac", "[network sticktomac] (note: Stick this NIC to the currentrly connected Switch/router port MAC.)"),
+                                                    new Parameter(6, 134, "sticktomac", "[network sticktomac] (note: Stick this NIC to the currentrly connected Switch/Router port MAC.)"),
+                                                    new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n(e.g. net wlan,off,{@all@})\r\n(e.g. net wlan,off,{@contains:net5@})"),
+
 
                                                     // power
                                                     new Parameter(12, 163, "shutdown", "[power shutdown]"),

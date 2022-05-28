@@ -867,7 +867,6 @@ namespace grace
     {
         private Win32Exception _exception;
 
-
         internal PingReply(uint nativeCode, int replystatus, IPAddress ipAddress, TimeSpan duration)
         {
             NativeCode = nativeCode;

