@@ -84,7 +84,7 @@ namespace grace
         private static MasterCommand[] masterCommands = {
                                                     new MasterCommand(1, "help", ""),
                                                     new MasterCommand(5, "ui", "Customizes the user interface."),
-                                                    new MasterCommand(6, "network", "Some very useful and applicable network stuff."),
+                                                    new MasterCommand(6, "network", "Some very useful and partial network stuff."),
                                                     new MasterCommand(7, "file", "Creates / opens / runs / deletes / transfers a file (note: only files with \'.run\' extension will run)."),
                                                     new MasterCommand(8, "scheduler", "Runs a batch of commands at specified date and time."),
                                                     new MasterCommand(9, "telnet", "Connects and runs telnet commands."),
@@ -214,7 +214,7 @@ namespace grace
                                                     //new Parameter(6, 129, "ping", "[network ping, on|off, @ip address]"),
                                                     new Parameter(6, 132, "username", "[network username]"),
                                                     new Parameter(6, 134, "sticktomac", "[network sticktomac] (note: Stick this NIC to the currentrly connected Switch/Router port MAC.)"),
-                                                    new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n(e.g. net wlan,off,{@all@})\r\n(e.g. net wlan,off,{@contains:net5@})"),
+                                                    new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n\t\t(e.g. net wlan,off,{@all@})\r\n\t\t(e.g. net wlan,off,{@contains:net5@})"),
 
 
                                                     // power
