@@ -100,6 +100,7 @@ namespace grace
                                                     new MasterCommand(19, "registry", "Manipulating the registry of windows.\r\n[registry delete, @key path, @key name]"),
                                                     new MasterCommand(20, "version", "Shows the current version of grace.\r\n[version]"),
                                                     new MasterCommand(21, "log", "Turns the log on or off.\r\n[log on|off]"),
+                                                    new MasterCommand(22, "run", "Run a cmd command (one commad at a time).\r\n[run netsh,wlan delete profile name=\"best_wifi\"]\r\n[run netsh,wlan show profiles]\r\n[run ipconfig]"),
                                                        };
         //private static SlaveCommand[] slaveCommands =  {
         //                                            new SlaveCommand(4, 0, "telnet @"),
@@ -214,7 +215,7 @@ namespace grace
                                                     //new Parameter(6, 129, "ping", "[network ping, on|off, @ip address]"),
                                                     new Parameter(6, 132, "username", "[network username]"),
                                                     new Parameter(6, 134, "sticktomac", "[network sticktomac] (note: Stick this NIC to the currentrly connected Switch/Router port MAC.)"),
-                                                    new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n\t\t(e.g. net wlan,off,{@all@})\r\n\t\t(e.g. net wlan,off,{@contains:net5@})"),
+                                                    //new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n\t\t(e.g. net wlan,off,{@all@})\r\n\t\t(e.g. net wlan,off,{@contains:net5@})"),
 
 
                                                     // power

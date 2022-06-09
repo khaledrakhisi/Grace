@@ -2009,10 +2009,6 @@ namespace grace
                 }
 
 
-
-
-
-
                 else
                 {
                     return "! Command \'" + cmd.masterCommand.master_command_name + "\' does not have parameter named \'" + cmd.parameterList[0].parameter_value + "\'.";
@@ -2093,5 +2089,55 @@ namespace grace
             }
 
         }
-}
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmd"></param>
+        /// <returns></returns>
+        private static string run(cls_Command cmd)
+        {
+            // if user entered the command with no parameters
+            if (cmd.parameterList == null || cmd.parameterList.Count == 0)
+            {
+                return cmd.masterCommand.master_command_description;
+            }
+
+            try
+            {
+                // Start the child process.
+                Process p = new Process();
+                // Redirect the output stream of the child process.
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.RedirectStandardOutput = true;
+                p.StartInfo.CreateNoWindow = true;
+                p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+
+                if (cmd.parameterList.Count == 1)
+                {                    
+                    p.StartInfo.FileName = cmd.parameterList[0].parameter_value;                    
+                }else if(cmd.parameterList.Count == 2)
+                {                    
+                    p.StartInfo.FileName = cmd.parameterList[0].parameter_value;
+                    p.StartInfo.Arguments = cmd.parameterList[1].parameter_value;                    
+                }
+                p.Start();
+                //System.Diagnostics.Process.Start(cmd.parameterList[0].parameter_value, "/c");
+                // Do not wait for the child process to exit before
+                // reading to the end of its redirected stream.
+                // p.WaitForExit();
+                // Read the output stream first and then wait.
+                string output = p.StandardOutput.ReadToEnd();
+                p.WaitForExit();
+                return output;
+
+            }
+            catch (Exception ex)
+            {
+                var currentMethodName = (new StackTrace()).GetFrame(0).GetMethod().Name;
+                return "! Error occured on \'" + currentMethodName + "\' method. " + ex.Message;
+            }
+
+        }
+    }
 }
