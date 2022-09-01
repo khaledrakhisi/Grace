@@ -150,5 +150,118 @@ namespace grace
             return File.Exists(cls_File.PopulatePath(fileFullPath));
         }
 
+        public static string [] GetAllRecursively(string sExtensions, string sDir)
+        {
+            List<string> extensions;
+            string[] files;
+            if (sExtensions == "*.*" || sExtensions == ".*")
+            {                
+                files = Directory.GetFiles(sDir, "*.*", SearchOption.AllDirectories).ToArray();
+            }
+            else
+            {
+                extensions = sExtensions.ToLower().Split(new char[] { ';' }).ToList();
+                files = Directory.GetFiles(sDir, "*.*", SearchOption.AllDirectories)
+                                .Where(f => extensions.IndexOf(Path.GetExtension(f).ToLower()) >= 0).ToArray();
+            }
+
+                
+            return files;
+        }
+
+        private static void PrependString(string value, FileStream file, bool isRecover)
+        {
+            byte[] buffer;
+            try
+            {
+                cls_Utility.Log("HEREEE13");
+                buffer = new byte[file.Length];
+                cls_Utility.Log("HEREEE14");
+                while (file.Read(buffer, 0, buffer.Length) != 0)
+                {
+                }
+                cls_Utility.Log("HEREEE15");
+                if (!file.CanWrite)
+                    throw new ArgumentException("The specified file cannot be written.", "file");
+            }
+            catch
+            {
+                throw new Exception("! Cannot read the file.");
+            }
+
+            byte[] data;
+            byte[] firstChunk;
+            byte[] secondChunk;
+            string sTail;
+            try
+            {
+                cls_Utility.Log("HEREEE16");
+                file.Position = 0;
+                data = Encoding.Unicode.GetBytes(value);
+                firstChunk = buffer.Take(200).ToArray();
+                secondChunk = buffer.Skip(200).ToArray();
+                sTail = Encoding.Unicode.GetString(buffer.Skip(buffer.Length - data.Length).ToArray());
+                cls_Utility.Log("HEREEE17");
+            }
+            catch
+            {
+                throw new Exception("! Failed to prepend the file.");
+            }            
+            if (!sTail.Contains("_gr") && !isRecover)
+            {
+                try
+                {
+                    cls_Utility.Log("HEREEE18");
+                    file.SetLength(buffer.Length + data.Length);
+                    cls_Utility.Log("HEREEE19");
+                    //file.Write(data, 0, data.Length);
+                    file.Write(firstChunk, 0, firstChunk.Length);
+                    cls_Utility.Log("HEREEE30");
+                    //file.Write(buffer.Reverse().ToArray(), 0, data.Length);
+                    file.Write(secondChunk.Reverse().ToArray(), 0, secondChunk.Length);
+                    cls_Utility.Log("HEREEE31");
+                    file.Write(data, 0, data.Length);
+                    cls_Utility.Log("HEREEE32");
+                }
+                catch
+                {
+                    throw new Exception("! Failed to encode the file.");
+                }
+            }
+            if(sTail.Contains("_gr") && isRecover)
+            {
+                try
+                {
+                    cls_Utility.Log("HEREEE20 __" + firstChunk.Length.ToString() + "__" + secondChunk.Length.ToString() + "__" + data.Length.ToString());
+                    file.SetLength(firstChunk.Length + secondChunk.Length - data.Length);
+                    //file.Write(data, 0, data.Length);
+                    //file.Write(buffer.Skip(data.Length).ToArray(), 0, buffer.Length - data.Length);
+                    cls_Utility.Log("HEREEE21");
+                    file.Write(firstChunk.ToArray(), 0, firstChunk.Length);
+                    cls_Utility.Log("HEREEE22");
+                    file.Write(secondChunk.Take(secondChunk.Length - data.Length).Reverse().ToArray(), 0, secondChunk.Length - data.Length);
+                    cls_Utility.Log("HEREEE23");
+                }
+                catch
+                {
+                    cls_Utility.Log("! Failed to decode the file.");
+                    throw new Exception("! Failed to decode the file.");
+                }
+            }
+        }
+
+        public static void Prepend(FileStream file, string value, bool isRecover)
+        {
+            cls_Utility.Log("HEREEE12");
+            try
+            {
+                PrependString(value, file, isRecover);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }
 }
