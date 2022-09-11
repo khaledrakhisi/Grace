@@ -3,4 +3,3 @@ D:\Develop\Csharp\grace\grace_scheduler\bin\Debug\grace_scheduler.pdb
 D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.csproj.CoreCompileInputs.cache
 D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.dll
 D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.pdb
-D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.csprojAssemblyReference.cache

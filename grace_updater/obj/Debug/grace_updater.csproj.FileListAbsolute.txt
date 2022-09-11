@@ -21,4 +21,3 @@ D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.csproj.GenerateRes
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.csproj.CoreCompileInputs.cache
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.exe
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.pdb
-D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.csprojAssemblyReference.cache

@@ -29,4 +29,3 @@ D:\Develop\Csharp\grace\grace_agent\obj\Debug\grace_agent.csproj.CoreCompileInpu
 D:\Develop\Csharp\grace\grace_agent\obj\Debug\grace_agent.csproj.CopyComplete
 D:\Develop\Csharp\grace\grace_agent\obj\Debug\gagent.exe
 D:\Develop\Csharp\grace\grace_agent\obj\Debug\gagent.pdb
-D:\Develop\Csharp\grace\grace_agent\obj\Debug\grace_agent.csprojAssemblyReference.cache

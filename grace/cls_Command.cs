@@ -217,6 +217,7 @@ namespace grace
                                                     new Parameter(6, 132, "username", "[network username]"),
                                                     new Parameter(6, 134, "sticktomac", "[network sticktomac] (note: Stick this NIC to the currentrly connected Switch/Router port MAC.)"),
                                                     //new Parameter(6, 135, "wlan", "[network wlan, on|off|show|names] \r\n\t\t(e.g. net wlan,off,{@all@})\r\n\t\t(e.g. net wlan,off,{@contains:net5@})"),
+                                                    new Parameter(6, 136, "port", "[network port] (note: returns the portnumber of this grace winsocket.)"),
 
 
                                                     // power
@@ -247,7 +248,7 @@ namespace grace
                                                     //new Parameter(17, 203, "receive", "[agent receive]"),
                                                     new Parameter(17, 204, "start", "[agent start]"),
                                                     new Parameter(17, 207, "stop", "[agent stop]"),
-                                                    new Parameter(17, 208, "batch", "[agent batch, @command1;command2;...] (set batch commands for the agent to read and run in the file named 'abat.abf')"),
+                                                    new Parameter(17, 208, "batch", "[agent batch, @command1;command2;...] (set batch commands for the agent to read and run in the file named 'abat.abf')\r\n\t\t(agent batch,sys inp,off;sys proc,off,gagent)"),
 
                                                     // registry
                                                     new Parameter(19, 210, "delete", "[registry delete, @key path, @key name]"),
