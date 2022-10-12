@@ -1,20 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net.Http;
+using System.Text;
 using System.Threading;
+using System.Web.Script.Serialization;
 
 namespace grace
 {
     static class cls_Utility
     {
-
         public static string processName = "grace";
         public static string serviceName = "AugustGrace";
         public static string updateConfigFilePath = cls_File.PopulatePath(@".\uppath.dat");
         public static bool isEchoOff = true;
+        public static bool isRemoteLog = false;
+
+        #region Log Classes
+        public class Logger
+        {
+            public string text { get; set; }
+            public string from { get; set; }
+            public string dateTime { get; set; }
+        }
+        #endregion
+
+        public static void SaveLogToTheServer(string s_fromAddress, string s_log)
+        {
+            Logger httpLog = new Logger();
+            httpLog.from = s_fromAddress;
+            httpLog.text = s_log;
+
+            string json = new JavaScriptSerializer().Serialize(httpLog);
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            string JSON_response = cls_Network.Http_POST("api/logs/", httpContent).Result;
+            if (JSON_response != null)
+                cls_Utility.Log("\r\n" + "Http Log saved successfully.");
+        }
 
         public static void Log(string sLog, bool append = true, string sFileFullName = "")
         {
+            try
+            {
+                if (isRemoteLog)
+                {
+                    
+                }
+            }
+            catch
+            {
+
+            }
+
             if (isEchoOff) return;
             try
             {

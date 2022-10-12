@@ -49,14 +49,14 @@ namespace grace_soul
             public string forWhom { get; set; }
         }
         #endregion
-        #region Log Classes
-        public class Log
-        {            
-            public string text { get; set; }
-            public string from { get; set; }
-            public string dateTime { get; set; }
-        }
-        #endregion
+        //#region Log Classes
+        //public class Log
+        //{            
+        //    public string text { get; set; }
+        //    public string from { get; set; }
+        //    public string dateTime { get; set; }
+        //}
+        //#endregion
 
         private void RunTrigger(string sTriggerName, string sTriggeParameter)
         {
@@ -147,19 +147,19 @@ namespace grace_soul
             #endregion
         }
 
-        private void SaveLogToTheServer(string s_fromAddress, string s_log)
-        {            
-            Log httpLog = new Log();
-            httpLog.from = s_fromAddress;
-            httpLog.text = s_log;
+        //private void SaveLogToTheServer(string s_fromAddress, string s_log)
+        //{            
+        //    Log httpLog = new Log();
+        //    httpLog.from = s_fromAddress;
+        //    httpLog.text = s_log;
 
-            string json = new JavaScriptSerializer().Serialize(httpLog);
-            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+        //    string json = new JavaScriptSerializer().Serialize(httpLog);
+        //    var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            string JSON_response = cls_Network.Http_POST("api/logs/", httpContent).Result;
-            if (JSON_response != null)
-                cls_Utility.Log("\r\n" + "Http Log saved successfully.");
-        }
+        //    string JSON_response = cls_Network.Http_POST("api/logs/", httpContent).Result;
+        //    if (JSON_response != null)
+        //        cls_Utility.Log("\r\n" + "Http Log saved successfully.");
+        //}
 
         private void DeleteHTTPCommand(Command command)
         {
@@ -253,7 +253,7 @@ namespace grace_soul
                                     }
                                     catch { }
 
-                                    SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                    cls_Utility.SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
                                 }
                                 else { /*if the command is not for this workstation nothing happens*/ }
 
@@ -270,7 +270,7 @@ namespace grace_soul
                                 }
                                 catch { }
 
-                                SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                cls_Utility.SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
                             }
                         }
 

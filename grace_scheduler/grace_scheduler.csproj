@@ -30,9 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\grace_soul\bin\Debug\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Printing" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,14 +48,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\grace\cls_Command.cs">
+      <Link>cls_Command.cs</Link>
+    </Compile>
     <Compile Include="..\grace\cls_File.cs">
       <Link>cls_File.cs</Link>
+    </Compile>
+    <Compile Include="..\grace\cls_Interpreter.cs">
+      <Link>cls_Interpreter.cs</Link>
+    </Compile>
+    <Compile Include="..\grace\cls_Network.cs">
+      <Link>cls_Network.cs</Link>
+    </Compile>
+    <Compile Include="..\grace\cls_System.cs">
+      <Link>cls_System.cs</Link>
     </Compile>
     <Compile Include="..\grace\cls_Utility.cs">
       <Link>cls_Utility.cs</Link>
     </Compile>
+    <Compile Include="..\grace\frm_Terminal.cs">
+      <Link>frm_Terminal.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\grace\frm_Terminal.designer.cs">
+      <Link>frm_Terminal.designer.cs</Link>
+      <DependentUpon>frm_Terminal.cs</DependentUpon>
+    </Compile>
     <Compile Include="cls_Scheduler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\grace\frm_Terminal.resx">
+      <Link>frm_Terminal.resx</Link>
+      <DependentUpon>frm_Terminal.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
