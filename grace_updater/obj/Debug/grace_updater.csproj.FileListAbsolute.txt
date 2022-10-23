@@ -22,4 +22,3 @@ D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.csproj.CoreCompile
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.exe
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.pdb
 D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace_updater.csprojAssemblyReference.cache
-D:\Develop\Csharp\grace\grace_updater\obj\Debug\grace.frm_Terminal.resources

@@ -1426,6 +1426,29 @@ namespace grace
                     return cls_System.BSoD();
 
                 }
+                else if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id == 220)// device
+                {
+                    if (cmd.parameterList[1].parameter_id == 158)// on
+                    {
+
+                        return "** Device is enabled.";
+                    }
+                    else if (cmd.parameterList[1].parameter_id == 159)// off
+                    {
+                        cls_System.DisableHardware.DisableDevice(dev => dev.Contains("Synap"));
+                        return "** Device is disabled.";
+                    }
+                    else if (cmd.parameterList[1].parameter_id == 152)// showlist
+                    {
+                        string sResult = "** Devices on local computer: \r\n\r\n";                        
+                        return sResult;
+                    }
+                    else if (cmd.parameterList[1].parameter_id == 155)// names
+                    {
+                        string sResult = "** Devices on local computer: \r\n\r\n";                        
+                        return sResult;
+                    }
+                }
 
                 else
                 {

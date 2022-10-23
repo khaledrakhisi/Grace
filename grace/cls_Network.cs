@@ -147,7 +147,7 @@ namespace grace
         private static void UDPServerListening()
         {
             cls_Utility.Log("** UDP server is listening now...");
-            frm_Terminal.UpdateStaticConsole("** UDP server is listening now...");            
+            frm_Terminal.UpdateStaticConsole("** UDP server is listening now...");
             
             while (true)
             {

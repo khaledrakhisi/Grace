@@ -261,7 +261,7 @@ namespace grace
         
 
         public static bool StopApplicationService()
-        {
+        {            
             try
             {
                 frm_terminal.UpdateConsole("Attempting to stop " + cls_Utility.serviceName + "...");

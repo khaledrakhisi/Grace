@@ -197,6 +197,9 @@ namespace grace
                                                     // system applications
                                                     new Parameter(11, 148, "applications", "[system applications, off|show|names (optional)] (note: if on or off not supplied, returns the usb readonly status.)"),
 
+                                                    // system device
+                                                    new Parameter(11, 220, "device", "[system device, off|on] (this command disables/enables hardwaare devices such as mice, keyboard and even Serial ports COM1-ComN)"),
+
                                                     // system wait
                                                     new Parameter(11, 149, "wait", "[system wait, @milliseconds] (Suspends the machine on milliseconds.)"),
 
