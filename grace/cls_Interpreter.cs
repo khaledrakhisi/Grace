@@ -993,6 +993,21 @@ namespace grace
 
                         return sResult;
                     }
+                    else if (cmd.parameterList[1].parameter_id == 117)// rename
+                    {
+
+                        string sResult = "";
+
+                        List<string> printers_selected = cls_Utility.FilterList(cls_System.PrintersList, cmd.parameterList[2].parameter_value);
+
+                        foreach (string printername in printers_selected)
+                        {
+                            cls_Printers.RenamePrinter(printername, cmd.parameterList[3].parameter_value);
+                            sResult += "** Printer \'" + printername + "\'. queue has been renamed.\r\n";
+                        }
+
+                        return sResult;
+                    }
 
 
                     else

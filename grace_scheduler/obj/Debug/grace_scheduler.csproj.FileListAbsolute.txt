@@ -5,4 +5,3 @@ D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.dll
 D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.pdb
 D:\Develop\Csharp\grace\grace_scheduler\bin\Debug\Renci.SshNet.dll
 D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.csproj.CopyComplete
-D:\Develop\Csharp\grace\grace_scheduler\obj\Debug\grace_scheduler.csprojAssemblyReference.cache

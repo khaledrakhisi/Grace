@@ -163,10 +163,11 @@ namespace grace
                                                     // system printer
                                                     new Parameter(11, 105, "printer", "-------Device--------"),
                                                     new Parameter(11, 108, "status", "[system printer, status]"),
-                                                    new Parameter(11, 111, "add", "[system printer, add, @printer name]"),
-                                                    new Parameter(11, 114, "delete", "[system printer, delete, @printer name]"),
-                                                    new Parameter(11, 115, "send", "[system printer, send, @printer name, @string to print]"),
-                                                    new Parameter(11, 116, "purge", "[system printer, purge, @printer name]"),
+                                                    new Parameter(11, 111, "add", "[system printer,add, @printer name]"),
+                                                    new Parameter(11, 114, "delete", "[system printer,delete, @printer name]"),
+                                                    new Parameter(11, 115, "send", "[system printer,send, @printer name, @string to print]"),
+                                                    new Parameter(11, 116, "purge", "[system printer,purge, @printer name]"),
+                                                    new Parameter(11, 117, "rename", "[system printer,rename,@printerOldName,@printerNewName]\r\n  \t\t(sys pri,ren,{@contains:hp@},Unknown)\r\n  \t\t(sys pri,ren,thermal,Nikita)"),
 
                                                     // system input
                                                     new Parameter(11, 137, "input", "-------Device--------"),
