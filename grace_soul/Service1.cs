@@ -228,8 +228,46 @@ namespace grace_soul
                         foreach (Command command in commands.commands)
                         {
                             string localhostAddress = "";                            
-                            if (command.forWhom != "{@all@}") //if forWhom is an IP
-                            {                                
+                            if (command.forWhom == "{@all@}") //if forWhom is not an IP
+                            {
+                                DeleteHTTPCommand(command);
+                                AddCommandToHistory(command);
+
+                                string s_fromAddress = cls_System.GetLocalComputerName();
+                                try
+                                {
+                                    s_fromAddress += " | " + cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT).ToString();
+                                }
+                                catch { }
+
+                                SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                            }
+                            else if (command.forWhom.StartsWith("{@startswith:"))
+                            {
+                                string sIp = cls_Utility.GetElementValue("startswith", command.forWhom);
+
+                                IPAddress ip = cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT);
+                                localhostAddress = ip.ToString();
+
+                                // Run the command only if it is for this computer
+                                if (localhostAddress.StartsWith(sIp))
+                                {
+                                    DeleteHTTPCommand(command);
+                                    AddCommandToHistory(command);
+
+                                    string s_fromAddress = cls_System.GetLocalComputerName();
+                                    try
+                                    {
+                                        s_fromAddress += " | " + cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT).ToString();
+                                    }
+                                    catch { }
+
+                                    SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                }
+                                else { /*if the command is not for this workstation nothing happens*/ }
+                            }
+                            else // if forWhom is an IP
+                            {
                                 if (cls_Network.ValidateIPv4(command.forWhom))
                                 {
                                     IPAddress ip = cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT);
@@ -253,24 +291,9 @@ namespace grace_soul
                                     }
                                     catch { }
 
-                                    //cls_Utility.SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                    SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
                                 }
-                                else { /*if the command is not for this workstation nothing happens*/ }
-
-                            }
-                            else // if forWhom == {@all@}
-                            {
-                                DeleteHTTPCommand(command);
-                                AddCommandToHistory(command);
-
-                                string s_fromAddress = cls_System.GetLocalComputerName();
-                                try
-                                {
-                                    s_fromAddress += " | " + cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT).ToString();
-                                }
-                                catch { }
-
-                                //cls_Utility.SaveLogToTheServer(s_fromAddress, RunHTTPCommand(command));
+                                else { /*if the command is not for this workstation nothing happens*/ }                                
                             }
                         }
 

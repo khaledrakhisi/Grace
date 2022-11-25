@@ -1,30 +1,0 @@
-2022/11/13 08:18:31 ** log state changed to 'on'.
-
-2022/11/13 08:18:32 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 08:18:34 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 08:39:52 ** log state changed to 'on'.
-
-2022/11/13 08:39:52 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 08:39:54 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:02:22 ** log state changed to 'on'.
-
-2022/11/13 11:02:22 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:02:24 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:07:14 ** log state changed to 'on'.
-
-2022/11/13 11:07:14 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:07:16 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:24:37 ** log state changed to 'on'.
-
-2022/11/13 11:24:37 ** log state changed to 'on'.! Error: Access is denied
-
-2022/11/13 11:24:39 ** log state changed to 'on'.! Error: Access is denied
-

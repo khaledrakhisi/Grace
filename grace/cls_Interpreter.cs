@@ -432,8 +432,6 @@ namespace grace
                     cmd.parameterList[1].parameter_value = PopulatePath(cmd.parameterList[1].parameter_value);
                     FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(cmd.parameterList[1].parameter_value);
                     return "** File version of \'" + fileVersionInfo.ProductName + "\' is: " + fileVersionInfo.ProductVersion;
-
-                    //return "App version is: " + cls_System.GetApplicationVersion(cmd.parameterList[1].parameter_value);
                 }
                 else if (cmd.parameterList[0].master_command_id != -1 && cmd.parameterList[0].parameter_id == 168)// _editall
                 {
@@ -2141,6 +2139,15 @@ namespace grace
             {
                 string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
                 return version;
+
+                //IPAddress ip = cls_Network.cls_IPTools.GetLocalActiveIP(cls_Network.pingableIPAddress, cls_Network.PORT);
+                //string localhostAddress = ip.ToString();
+                //string sIp = cls_Utility.GetElementValue("startswith", "{@startswith:172.29.210@}");
+                //if (localhostAddress.StartsWith(sIp))
+                //{
+                //    return sIp;
+                //}
+                //else { /*if the command is not for this workstation nothing happens*/ }                
             }
 
             try
